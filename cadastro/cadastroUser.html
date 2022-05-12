@@ -8,22 +8,62 @@
 
 <body>
     <!-- CABEÇALHO -->
-    <fieldset style="width: 500px;">
+    <fieldset style="width: 500px; background-color: rgb(241, 241, 241);">
         <a href="../login.html">Sair</a><br> 
         <a href="../index.html"><img src="../img/logo.png" style="width: 200px;"></a>
     </fieldset>
     
     <!-- NAVEGAÇÃO -->
     <fieldset style="width: 500px;">
-        <a href="cadastro.html"><img src="../img/seta_esquerda.jpg" style="width: 50px;"></a>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
-        <label>TESTE</label>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+        <a href="cadastro.html"><img src="../img/seta_esquerda.jpg" style="width: 50px;"></a> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+        <label>Cadastro de Usuário</label>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
         <a href=""><img src="../img/seta_direita.jpg" style="width: 50px;"></a>
     </fieldset>
 
 
     <!-- CORPO -->
-    <form action="">
-
+    <form action="../index.html">
+        <fieldset style="width: 500px;">
+            <h3>Informações</h3> 
+            <p>
+                <label>Nome</label><br>
+                <input type="text box" id="descricao" value="Digite o nome">
+            </p>
+            <p>
+                <label>Sexo</label><br>
+                <input type="radio" name="size" id="radSmall" value="1" checked="checked" /> Feminino
+                <input type="radio" name="size" id="radMedium" value="2" /> Masculino
+            </p>
+            <p>
+                <label>Preferências</label><br>
+                <input type="checkbox" id="chkEgs" value="eggos"> Ação
+                <input type="checkbox" id="chkHam" value="Ham"> Aventura
+                <input type="checkbox" id="chkEgs" value="eggos"> Comédia <br>
+                <input type="checkbox" id="chkHam" value="Ham"> Drama
+                <input type="checkbox" id="chkEgs" value="eggos"> Romance
+                <input type="checkbox" id="chkHam" value="Ham"> Histórico
+            </p>
+            <p>
+                <label>Observações</label><br>
+                <textarea id="txtAnswer" rows="6" cols="40" placeholder="Nos conte sobre suas preferências"></textarea>
+            </p>
+            <p>
+                <label>E-mail</label><br>
+                <input type="text" id="descricao" value="Digite o e-mail">
+            </p>
+            
+    
+            <p>
+                <button type="submit">Cadastrar</button>
+                <button type="reset">Limpar</button>
+                                
+            </p>
+            
+        </fieldset>
+        
+            
+        
+    
     </form>
 
 
