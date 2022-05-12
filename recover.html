@@ -7,23 +7,29 @@
 </head>
 
 <body>
-    <h3>Esqueceu a senha?</h3>
+    <!-- CABEÇALHO -->
+    <fieldset style="width: 500px;">
+        <a href="../login.html">Voltar</a><br>
+        <a href="../index.html"><img src="../img/logo.png" style="width: 200px;"></a>
+    </fieldset><br>
+
     <form action="">
-        <fieldset style="width: 25%">
-            <label>Recuperar senha</label>
+        <fieldset style="width: 500px">
+            <legend>Recuperar senha</legend>
             <p>
                 <label>E-mail:</label>
                 <input type="text" id="email">
             </p>
 
             <p>
-                <input type="button" value="Entrar" onclick="enviarEmail()">
+                <a href="login.html"><input type="button" value="Entrar" onclick="enviarEmail()"></a>
                 <script>
                     function enviarEmail(){
                        alert("Senha enviada para o e-mail informado.");
                     }
                 </script>
             </p>
+
         </fieldset>
 
     </form>
