@@ -8,11 +8,14 @@
 
 <body>
     <!-- CABEÇALHO -->
-    <fieldset style="width: 500px;">
-        <a href="../login.html">Voltar</a><br>
-        <a href="../index.html"><img src="../img/logo.png" style="width: 200px;"></a>
+    <fieldset style="width: 500px; background-color: #EEDDFE;">
+        <a href="login.html">Voltar</a><br>
+        <a href="recover.html">
+            <img src="img/logo.png" style="width: 200px;">
+        </a>
     </fieldset><br>
 
+    <!-- CORPO -->
     <form action="">
         <fieldset style="width: 500px">
             <legend>Recuperar senha</legend>
@@ -25,19 +28,14 @@
                 <a href="login.html">
                     <input type="button" value="Entrar" onclick="enviarEmail()">
                 </a>
-                <!-- <a href="login.html">
-                    <button type="submit" onclick="enviarEmail()">Enviar</button>
-                </a> -->
-
+                
                 <script>
                     function enviarEmail() {
                         alert("Senha enviada para o e-mail informado.");
                     }
                 </script>
             </p>
-
         </fieldset>
-
     </form>
 
 </body>
