@@ -4,41 +4,53 @@
 <head>
     <meta charset="UTF-8">
     <title>LOKADORA - Bem-vindo!</title>
+    <link rel="stylesheet" type="text/css" href="css/login.css" />
 </head>
 
 <body>
-    <!-- CABEÇALHO -->
-    <fieldset style="width: 500px; background-color: #EEDDFE;">
-        <a href="">
-            <img src="img/logo.png" style="width: 200px;">
-        </a>
-    </fieldset><br>
+    <div class="pai">
+        <div id="container-a">
+            <img src="img/logo1.png">
+        </div>
 
-    <form action="index.html">
-        <fieldset style="width: 500px;">
-            <legend>Login</legend>
-            <p>
-                <label>Usuário</label>
-                <input type="text" id="inputUser" placeholder="Usuário">
-            </p>
-            <p>
-                <label>Senha</label>
-                <input type="password" id="inputPassword" value="secret">
-            </p>
+        <div id="container-b">
+            <div id="topo-b">
+                <h2>Login...</h2>
+                <p>Faça o login para experimentar os mais completos conteúdos</p>
+            </div>
 
-            <a href="newUser.html">Novo</a> 
-            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-            <a href="recover.html">Esqueceu a senha?</a><br><br>
+            <div class="formulario">
+                <div>
+                    <label class="inputs">Usuário</label><br>
+                    <input class="inputs" type="text" id="inputUser" placeholder=" Usuário"><br><br>
+                    <label class="inputs">Senha</label><br>
+                    <input class="inputs" type="password" id="inputPassword" value="  secret">
+                </div><br>
 
-            <p>
-                <a href="index.html">
-                    <input type="button" value="Entrar">
-                </a>
-            </p>
-        </fieldset>
+                <div id="links">
+                    <a href="newUser.html">Novo</a>
+                    <a id="recover" href="recover.html">Esqueceu a senha?</a><br><br>
+                </div>
 
-    </form>
+                <div>
+                    <a href="index.html"><button id="botao">ENTRAR</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <footer>
+        <div class="conteudo-footer">
+            <p> Contacte a pessoa desenvolvedora </p>
+            <div class="contato">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/jamilly-anunciada/" target="_blank">LinkedIn |</a></li>
+                    <li><a href="https://github.com/darllen" target="_blank">GitHub |</a></li>
+                    <li><a href="mailto:jamillymilly10@hotmail.com" target="_blank">E-mail</a></li>
+                </ul>
+            </div> 
+        </div>
+    </footer>
 </body>
 
 </html>
