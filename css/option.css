@@ -1,0 +1,133 @@
+* {
+    font-family: Courier, monospace;
+}
+
+html {
+    height: 100%;
+    min-height: 100%;
+}
+
+body {
+    background-color: #23282E;
+    /*para o footer ficar lá em baixo-->*/
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+footer {
+    margin-top: auto;
+    width: 100%;
+    background-color: #007271;
+}
+
+/* ===== NAVEGAÇÃO =========== */
+nav {
+    display: flex;
+}
+
+nav a {
+    position: relative;
+}
+
+#nav-opcoes {
+    margin-left: 60%;
+    position: relative;
+}
+
+nav img {
+    width: 200px;
+    margin-left: 30px;
+    margin-top: 3vh;
+}
+
+
+#nav-opcoes img {
+    width: 40px;
+}
+
+/* ==================== */
+#options {
+    text-align: center;
+    /* margin-top: 10%;
+    margin-bottom: 10%; */
+    justify-content: center;
+    align-items: center;
+}
+
+#options a {
+    padding-right: 2.5%;
+    padding-left: 2.5%;
+    position: relative;
+}
+
+#options a img {
+    width: 150px;
+}
+
+h3 {
+    margin-left: 18%;
+    margin-top: 5%;
+    color: gray;
+}
+
+.centralizar {
+    text-align: center;
+}
+
+#avatar{
+    width: 200px;
+}
+
+.lista ul {
+    display: inline-flex;
+}
+
+/* list-style-image: url("../img/seta-direita.png"); */
+.lista ul li {
+    list-style-type: none;
+    padding-right: 17px;
+}
+.sobre{
+    margin-left: 10%;
+}
+.sobre h4{
+    color: #F3036B;
+    
+}
+.sobre ul li{
+    color: #F3EFF9;
+}
+
+
+/* FOOTER */
+.conteudo-footer p {
+    padding-top: 15px;
+    text-align: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+/* .contato{
+    margin-left: 6%;
+} */
+
+.contato ul {
+    display: flex;
+    margin-left: 38%;
+    bottom: 25px;
+}
+
+.contato ul li {
+    list-style-type: none;
+    padding-right: 17px;
+    font-size: 13px;
+}
+
+.contato ul li a {
+    color: #FFF;
+}
