@@ -4,68 +4,96 @@
 <head>
     <meta charset="UTF-8">
     <title>LOKADORA - Bem-vindo!</title>
+    <link rel="stylesheet" type="text/css" href="../css/form.css" />
 </head>
 
 <body>
-    <!-- CABEÇALHO -->
-    <fieldset style="width: 500px; background-color: #EEDDFE;">
-        <a href="../login.html">Sair</a><br>
+    <!-- MENU DE NAVEGAÇÃO -->
+    <nav>
         <a href="../index.html">
-            <img src="../img/logo.png" style="width: 200px;">
+            <img src="../img/logo.png">
         </a>
-    </fieldset>
-
-    <!-- NAVEGAÇÃO -->
-    <fieldset style="width: 500px;">
-        <a href="cadastro.html">
-            <img src="../img/seta_esquerda.jpg" style="width: 50px;">
-        </a> 
-        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
-        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
-        <label>Cadastro de Usuário</label>
-        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
-        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
-        <a href="">
-            <img src="../img/seta_direita.jpg" style="width: 50px;">
-        </a>
-    </fieldset>
-
+        <div id="nav-opcoes">
+            <a href="cadastro.html">
+                <img src="../img/seta-esquerda.png">
+            </a>
+            <a href="">
+                <img src="../img/seta-direita.png">
+            </a>
+            <a href="../login.html">
+                <img src="../img/sair.png">
+            </a>
+        </div>
+    </nav>
+    
     <!-- CORPO -->
-    <form action="../index.html">
-        <fieldset style="width: 500px;">
-            <h3>Informações do Usuário</h3>
-            <p>
-                <label>Nome</label><br>
-                <input type="text box" id="descricao" placeholder="Digite o nome">
-            </p>
-            <p>
-                <label>E-mail</label><br>
-                <input type="text" id="descricao" placeholder="Digite o e-mail">
-            </p>
-            <p>
-                <label>Sexo</label><br>
-                <input type="radio" name="sexo" id="radFem" value="1" checked="checked" /> Feminino
-                <input type="radio" name="sexo" id="radMas" value="2" /> Masculino
-            </p>
-            <p>
-                <label>Preferências</label><br>
-                <input type="checkbox" id="chkAcao" value="eggos"> Ação
-                <input type="checkbox" id="chkAventura" value="Ham"> Aventura
-                <input type="checkbox" id="chkComedia" value="eggos"> Comédia <br>
-                <input type="checkbox" id="chkDrama" value="Ham"> Drama
-                <input type="checkbox" id="chkRomance" value="eggos"> Romance
-            </p>
-            <p>
-                <label>Observações</label><br>
-                <textarea id="txtAnswer" rows="6" cols="40" placeholder="Nos conte sobre suas preferências"></textarea>
-            </p>
-            <p>
-                <button type="submit">Cadastrar</button>
-                <a href="cadastroUser.html"><button type="reset">Limpar</button></a>
-            </p>
-        </fieldset>
-    </form>
+    <div class="card" id="container-b">
+        <div id="topo-b">
+            <h2>Cadastar novo usuário</h2>
+        </div>
+        <form action="../index.html">
+            <div class="formulario">
+                <div class="colocar-ao-lado">
+                    <div class="name">
+                        <label class="inputs">Nome</label>
+                        <input class="inputs" type="text" placeholder=" Digite o nome">
+                    </div>
+                    <div class="email">
+                        <label class="inputs">E-mail</label>
+                        <input class="inputs" placeholder=" Digite o e-mail">
+                    </div>
+                </div>
 
+                <div class="elemento">
+                    <label>Sexo</label><br>
+                    <input type="radio" name="radio" value="1" checked="checked" /> Feminino
+                    <input type="radio" name="radio" value="2" /> Masculino
+                </div>
+
+                <div class="elemento">
+                    <label>Preferências</label><br>
+                    <input type="checkbox" id="chkAcao" value="acao"> Ação
+                    <input type="checkbox" id="chkAventura" value="aventura"> Aventura
+                    <input type="checkbox" id="chkComedia" value="comedia"> Comédia <br>
+                    <input type="checkbox" id="chkDrama" value="drama"> Drama
+                    <input type="checkbox" id="chkRomance" value="romance"> Romance
+                </div>
+
+                <div class="elemento">
+                    <label>Descrição</label><br>
+                    <textarea id="txtAnswer" rows="6" cols="40" placeholder="Conte-me mais"></textarea>
+                </div><br>
+
+                <div class="colocar-ao-lado">
+                    <div class="nome">
+                        <button type="submit" id="botao-cadastrar" onclick="cadastrarFilme()">CADASTRAR</button>
+                        <script>
+                            function cadastrarFilme() {
+                                alert("Usuário cadastrado com sucesso!");
+                            }
+                        </script>
+                    </div>
+                    <div class="email">
+                        <button type="reset" id="botao-limpar">LIMPAR</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="conteudo-footer">
+            <p> Contacte a pessoa desenvolvedora </p>
+            <div class="contato">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/jamilly-anunciada/" target="_blank">LinkedIn |</a></li>
+                    <li><a href="https://github.com/darllen" target="_blank">GitHub |</a></li>
+                    <li><a href="mailto:jamillymilly10@hotmail.com" target="_blank">E-mail</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
