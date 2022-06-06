@@ -72,7 +72,9 @@ nav img {
     text-align: center;
     color: #FFFF;
 }
-
+.card {
+    margin-left:27%; 
+}
 #container-b {
     background-color: #FFFF;
     width: 600px;
@@ -80,13 +82,13 @@ nav img {
     color: #13414C;
     position: relative;
     border-radius: 0px 5px 5px 0px;
-    margin-bottom: 10%;
+    margin-bottom: 10%;   
+    
 }
 
 .formulario {
     margin-top: 2%;
     position: absolute;
-
 }
 
 .colocar-ao-lado {
@@ -97,12 +99,15 @@ nav img {
 
 .nome {
     position: relative;
-    margin-left: 25%;
+    margin-left: 27%;
 }
 
 .email {
     position: relative;
     margin-left: 10%;
+}
+.titulo-select{
+    margin-left: 40%;
 }
 
 #container-b #topo-b {
@@ -117,10 +122,15 @@ nav img {
     border-radius: 3px;
     margin-left: 35%;
 }
+#select{
+    margin-left: 40%;
+    width: 120%;
+    height: 30px;
+}
 
 .elemento {
     margin-top: 7%;
-    margin-left: 16%;
+    margin-left: 20%;
 }
 
 #links {
@@ -141,6 +151,11 @@ nav img {
 
 #txtAnswer {
     margin-left: 16%;
+    margin-top: 8px;
+    /* margin-bottom: 30px; */
+}
+#fdeouro {
+    margin-top: 8px;
 }
 
 #botao-login {
