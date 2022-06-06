@@ -4,72 +4,98 @@
 <head>
     <meta charset="UTF-8">
     <title>LOKADORA - Bem-vindo!</title>
+    <link rel="stylesheet" type="text/css" href="../css/form.css" />
 </head>
 
 <body>
-    <!-- CABEÇALHO -->
-    <fieldset style="width: 500px; background-color: #EEDDFE;">
-        <a href="../login.html">Sair</a><br>
+    <!-- MENU DE NAVEGAÇÃO -->
+    <nav>
         <a href="../index.html">
-            <img src="../img/logo.png" style="width: 200px;">
+            <img src="../img/logo.png">
         </a>
-    </fieldset>
-
-    <!-- NAVEGAÇÃO -->
-    <fieldset style="width: 500px;">
-        <a href="cadastro.html"><img src="../img/seta_esquerda.jpg" style="width: 50px;"></a> 
-        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
-        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-        <label>Cadastro de Filme</label>
-        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
-        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-        <a href="">
-            <img src="../img/seta_direita.jpg" style="width: 50px;">
-        </a>
-    </fieldset>
-
+        <div id="nav-opcoes">
+            <a href="cadastro.html">
+                <img src="../img/seta-esquerda.png">
+            </a>
+            <a href="">
+                <img src="../img/seta-direita.png">
+            </a>
+            <a href="../login.html">
+                <img src="../img/sair.png">
+            </a>
+        </div>
+    </nav>
+    
     <!-- CORPO -->
-    <form action="../index.html">
-        <fieldset style="width: 500px;">
-            <h3>Informações do Filme</h3>
-            <p>
-                <label>Título</label><br>
-                <input type="text box" id="descricao" placeholder="Digite o título do filme">
-            </p>
-            <p>
-                <label>Gênero</label><br>
-                <select name="" id="">
-                    <option value="0">...</option>
-                    <option value="1">Ação</option>
-                    <option value="2">Aventura</option>
-                    <option value="3">Comédia</option>
-                    <option value="4">Drama</option>
-                    <option value="5">Romance</option>
-                </select>
-            </p>
-            <p>
-                <label>Prêmios</label><br>
-                <input type="checkbox" id="gdeouro" value="globoDeOuro"> Globo de Ouro
-                <input type="checkbox" id="grammy" value="grammy"> Grammy
-                <input type="checkbox" id="fdeouro" value="framboesa de ouro"> Framboesa de Ouro <br>
-                <input type="checkbox" id="oscar" value="oscar"> Óscar
-                <input type="checkbox" id="eddie" value="eddie"> Eddie
-                <input type="checkbox" id="dgfa" value="directoris guild of america"> Directors Guild of America
-            </p><br>
-            <p>
-                <label>Descrição</label><br>
-                <textarea id="txtAnswer" rows="6" cols="40" placeholder="Nos conte sobre o filme"></textarea>
-            </p>
+    <div class="card" id="container-b">
+        <div id="topo-b">
+            <h2>Cadastar novo filme</h2>
+        </div>
+        <form action="../index.html">
+            <div class="formulario">
+                <div class="colocar-ao-lado">
+                    <div class="name">
+                        <label class="inputs">Título</label>
+                        <input class="inputs" type="text" placeholder=" Título do filme">
+                    </div>
+                    <div class="email">
+                        <label class="titulo-select">Gênero</label>
+                        <select name="" id="select">
+                            <option value="0">...</option>
+                            <option value="1">Ação</option>
+                            <option value="2">Aventura</option>
+                            <option value="3">Comédia</option>
+                            <option value="4">Drama</option>
+                            <option value="5">Romance</option>
+                        </select>
+                    </div>
+                </div>
 
-            <p>
-                <button type="submit">Cadastrar</button>
-                <a href="cadastroFilm.html">
-                    <button type="reset">Limpar</button>
-                </a>
-            </p>
-        </fieldset>
-    </form>
+                <div class="elemento">
+                    <label>Prêmios</label><br>
+                    <input type="checkbox" id="fdeouro" value="framboesa de ouro"> Framboesa de Ouro
+                    <input type="checkbox" id="eddie" value="eddie"> Eddie<br>
+                    <input type="checkbox" id="gdeouro" value="globoDeOuro"> Globo de Ouro
+                    <input type="checkbox" id="oscar" value="oscar"> Óscar<br>
+                    <input type="checkbox" id="grammy" value="grammy"> Grammy
+                </div>
 
+                <div class="elemento">
+                    <label>Descrição</label><br>
+                    <textarea id="txtAnswer" rows="6" cols="40" placeholder="Descrição do filme"></textarea>
+                </div><br>
+
+                <div class="colocar-ao-lado">
+                    <div class="nome" style="margin-left: 37%;">
+                        <button type="submit" id="botao-cadastrar" onclick="cadastrarFilme()">CADASTRAR</button>
+                        <script>
+                            function cadastrarFilme() {
+                                alert("Filme cadastrado com sucesso!");
+                            }
+                        </script>
+                    </div>
+                    <div class="email">
+                        <button type="reset" id="botao-limpar">LIMPAR</button>
+                    </div>
+                </div>
+
+            </div>
+        </form>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="conteudo-footer">
+            <p> Contacte a pessoa desenvolvedora </p>
+            <div class="contato">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/jamilly-anunciada/" target="_blank">LinkedIn |</a></li>
+                    <li><a href="https://github.com/darllen" target="_blank">GitHub |</a></li>
+                    <li><a href="mailto:jamillymilly10@hotmail.com" target="_blank">E-mail</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
