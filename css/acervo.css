@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+* {
+    font-family: Courier, monospace;
+}
+
+html {
+    height: 100%;
+    min-height: 100%;
+}
+
+body {
+    background-color: #13414C;
+    /*para o footer ficar lá em baixo-->*/
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+footer {
+    width: 100%;
+    background-color: #007271;  
+}
+
+.conteudo-footer p {
+    padding-top: 15px;
+    text-align: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+/* .contato{
+    margin-left: 6%;
+} */
+
+.contato ul {
+    display: flex;
+    margin-left: 38%;
+    bottom: 25px;
+}
+
+.contato ul li {
+    list-style-type: none;
+    padding-right: 17px;
+    font-size: 13px;
+}
+
+.contato ul li a {
+    color: #FFF;
+}
+
+/* ===== NAVEGAÇÃO =========== */
+nav {
+    width: 100%;
+
+}
+
+nav img {
+    width: 200px;
+    margin-left: 30px;
+    margin-top: 3vh;
+}
+
+.icone {
+    width: 40px;
+}
+
+#icones {
+    margin-left: 60%;
+}
+
+/* ===== TOPO =========== */
+.navegacao {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    
+    background-image: url(../img/fundo-grunge3.jpg);
+    background-size: 100%;
+}
+
+.baixo {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.cima {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+/* ============= */
+.colocar-ao-lado {
+    display: flex;
+}
+
+.opcoes {
+    position: relative;
+    margin-left: 0%;
+    width: 480px;
+    margin-top: 10em;
+}
+
+.descricao-pag {
+    position: relative;
+    margin-left: 15%;
+    width: 400px;
+    text-align: center;
+    margin-top: 7em;
+    color: #FFF;
+}
+.descricao-pag h1 {
+    font-family: 'Lato', sans-serif;
+    color: #FFF;
+}
+.botao {
+    color: #FFF;
+    text-align: end;
+    border-radius: 0px 100px 100px 0px;
+    border: 2px solid transparent;
+    padding: 10px;
+    padding-right: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#primeiro-botao{
+    width: 460px;
+    background-color: #F3036B;
+}
+#primeiro-botao:hover{
+    width: 480px;
+    color: #FFF;
+}
+
+#segundo-botao{
+    width: 420px;
+    background-color: #AC045D;
+}
+#segundo-botao:hover{
+    width: 440px;
+    color: #FFF; 
+}
+
+#terceiro-botao{
+    width: 380px;
+    background-color: #13414C;
+}
+#terceiro-botao:hover{
+    width: 400px;
+    color: #FFF;
+}
+
+#quarto-botao{
+    width: 340px;
+    background-color: #007271;
+}
+#quarto-botao:hover{
+    width: 360px;
+    color: #FFF;
+}
+
+#quinto-botao{
+    width: 300px;
+    background-color: #606060;
+}
+#quinto-botao:hover{
+    width: 320px;
+    color: #FFF;
+}
+/* ==================================== */
+.section{
+    margin-top: 55%;
+}
+
+.secao{
+    margin-top: 15%;
+}
+.topo-section{
+    color: #3F9695;
+    margin-left: 10%;
+}
+
+.topo-section h2{
+    font-family: 'Lato', sans-serif;
+    color: #FFF;
+}
+
+.filmes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filme{
+    position: relative;
+    text-align: center;
+}
+
+.filme a img{
+    margin: 3%;
+    width: 250px; 
+    height: 360px;
+}
+
+#botao-locacao {
+    width: 130px;
+    color: #FFF;
+    background-color: transparent;
+    border: 2px solid #007271;
+    padding: 6px;
+    font-size: 12px;
+    border-radius: 50px;
+    margin-bottom: 9%;
+}
+
+#botao-locacao:hover {
+    background-color: #007271;
+    border: none;
+    color: #FFF;
+    border: 2px solid #007271;
+}
+
+.voltar-topo{
+    text-align: end;
+    margin-right: 10%;
+}
+.voltar-topo a{
+    color: #3F9695;
+}
