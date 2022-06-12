@@ -4,61 +4,110 @@
 <head>
     <meta charset="UTF-8">
     <title>Matrix Resurrections</title>
-</head>
+    <link rel="stylesheet" type="text/css" href="../../css/filme.css" />
+</head> 
 
 <body>
-    <!-- CABEÇALHO -->
-    <fieldset style="width: 500px; background-color:#EEDDFE;">
-        <a href="../../login.html">Sair</a> <br>
-        <a href="../../index.html"><img src="../../img/logo.png" style="width: 200px;"></a>
-    </fieldset>
+    <!-- MENU DE NAVEGAÇÃO -->
+    <div class='navegacao' id="matrix">
+        <div class='baixo'></div>
+        <div class='cima'>
+            <nav>
+                <a href="../../login.html">
+                    <img src="../../img/logo.png">
+                </a>
 
-    <!-- NAVEGAÇÃO -->
-    <fieldset style="width: 500px;">
-        <a href="../acervo.html"><img src="../../img/seta_esquerda.jpg" style="width: 50px;"></a> &nbsp &nbsp &nbsp
-        &nbsp
-        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-        <label>Matrix Resurrections</label>
-        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                <a id="test" href="../acervo.html">
+                    <img class="icone" src="../../img/seta-esquerda.png">
+                </a>
+                <a href="">
+                    <img class="icone" src="../../img/seta-direita.png">
+                </a>
+                <a href="../../login.html">
+                    <img class="icone" src="../../img/sair.png">
+                </a><br>
+            </nav>
+            <h1 id="title" style="color: white;">MATRIX RESURRECTIONS</h1>
 
-        <a href=""><img src="../../img/seta_direita.jpg" style="width: 50px;"></a>
-    </fieldset>
-
-
+            <div class="colocar-ao-lado">
+                <div class="nome">
+                    <a href="#trailer"><button class="botao">VER TRAILER</button></a>
+                </div>
+                <div class="email">
+                    <a href="../../locacao.html"><button class="botao">LOCAÇÃO</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- CORPO -->
-    <fieldset style="width: 500px;">
-        <iframe width="500" height="315" src="https://www.youtube.com/embed/aHmDi6CUQ3M" title="YouTube video player"
+    <div class="colocar-ao-lado">
+        <div id="informacoes">
+            <h4>Diretor: Lana Wachowski</h4>
+            <h4>Ano de lançamento: 2021</span>
+                <h4>Atores principais: </h4>
+                <ul>
+                    <li>Priyanka Chopra</li>
+                    <li>Keanu Reeves</li>
+                    <li>Carrie-Anne Moss</li>
+                </ul>
+        </div>
+        <div class="colocar-ao-lado" id="atores">
+            <img src="../../img/matrix-ator1.png">
+            <img src="../../img/matrix-ator2.png">
+            <img src="../../img/matrix-ator3.png">
+        </div>
+    </div>
+
+    <div id="trailer" class="trailer">
+        <iframe width="600" height="350" src="https://www.youtube.com/embed/aHmDi6CUQ3M" title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe><br>
+            allowfullscreen></iframe>
+    </div>
 
-        <h4>Diretor: Lana Wachowski</h4>
-        <h4>Ano de lançamento: 2021</h4>
-        <h4>Atores principais: </h4>
-        <ul>
-            <li>Keanu Reeves</li>
-            <li>Carrie-Anne Moss</li>
-            <li>Yahya Abdul-Mateen II</li>
-            <li>Priyanka Chopra</li>
-        </ul>
+    
 
-        <h4>Descrição do filme:</h4>
-        <p>
-            Se passando 20 anos após os acontecimentos de de Matrix Revolutions, Neo vive uma vida aparentemente comum
-            sob sua identidade original como Thomas A. Anderson em São Francisco, Califórnia, com um terapeuta que lhe
-            prescreve pílulas azuis para neutralizar as coisas estranhas e não naturais que ele ocasionalmente vislumbra
-            em sua mente. Ele também conhece uma mulher que parece ser Trinity (Carrie Anne-Moss), mas nenhum deles se
-            reconhece. No entanto, quando uma nova versão de Morpheus oferece a ele a pílula vermelha e reabre sua mente
-            para o mundo da Matrix, que se tornou mais seguro e perigoso nos anos desde a infecção de Smith, Neo volta a
-            se juntar a um grupo de rebeldes para lutar contra um novo e maois perigoso inimigo e livrar todos da Matrix
-            novamente.
-        </p>
+    <div id="descricao">
+        <h3>DESCRIÇÃO</h3>
+        <div class="colocar-ao-lado">
+            <p class="text" id="text-1">
+                Se passando 20 anos após os acontecimentos de de Matrix Revolutions, Neo vive uma vida aparentemente comum
+                sob sua identidade original como Thomas A. Anderson em São Francisco, Califórnia, com um terapeuta que lhe
+                prescreve pílulas azuis para neutralizar as coisas estranhas e não naturais que ele ocasionalmente vislumbra
+                em sua mente.
+            </p>
+            <p class="text" id="text-2">
+                Ele também conhece uma mulher que parece ser Trinity (Carrie Anne-Moss), mas nenhum deles se
+                reconhece. No entanto, quando uma nova versão de Morpheus oferece a ele a pílula vermelha e reabre sua mente
+                para o mundo da Matrix, que se tornou mais seguro e perigoso nos anos desde a infecção de Smith, Neo volta a
+                se juntar a um grupo de rebeldes para lutar contra um novo e maois perigoso inimigo e livrar todos da Matrix
+                novamente.
+            </p>
+        </div>
+        <div class="colocar-ao-lado">
+            <div class="mais-detalhes">
+                <a href="https://www.papodecinema.com.br/filmes/matrix-resurrections/" target="_blank"><button class="botao">MAIS DETALHES</button></a>
+            </div>
+            <div class="locacao">
+                <a href="../../locacao.html" target="_blank"><button class="botao">LOCAÇÃO</button></a>
+            </div>
+        </div>
+        
+    </div>
 
-        <a href="https://www.papodecinema.com.br/filmes/matrix-resurrections/" target="_blank">Mais detalhes</a>
-        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-        <a href="../../locacao.html" target="_blank">Locação</a>
-
-    </fieldset>
+    <!-- FOOTER -->
+    <footer>
+        <div class="conteudo-footer">
+            <p> Contacte a pessoa desenvolvedora </p>
+            <div class="contato">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/jamilly-anunciada/" target="_blank">LinkedIn |</a></li>
+                    <li><a href="https://github.com/darllen" target="_blank">GitHub |</a></li>
+                    <li><a href="mailto:jamillymilly10@hotmail.com" target="_blank">E-mail</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
