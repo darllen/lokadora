@@ -1,130 +1,149 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
 * {
     font-family: Courier, monospace;
 }
 
 html {
+    width: 100%;
     height: 100%;
-    min-height: 100%;
 }
 
 body {
-    background-color: #13414C;
+    background-color: #1D2024;
+    margin: 0;
     /*para o footer ficar lá em baixo-->*/
+    min-height: 100%;
+    min-width: 100%;
     display: flex;
     flex-direction: column;
-    min-height: 100%;
 }
 
 a {
     text-decoration: none;
 }
 
-footer {
-    width: 100%;
-    background-color: #007271;  
-}
-
-.conteudo-footer p {
-    padding-top: 15px;
-    text-align: center;
-    align-items: center;
-    font-size: 14px;
-}
-
-/* .contato{
-    margin-left: 6%;
-} */
-
-.contato ul {
-    display: flex;
-    margin-left: 38%;
-    bottom: 25px;
-}
-
-.contato ul li {
-    list-style-type: none;
-    padding-right: 17px;
-    font-size: 13px;
-}
-
-.contato ul li a {
-    color: #FFF;
-}
-
-/* ===== NAVEGAÇÃO =========== */
+/* MENU DE NAVEGAÇÃO */
 nav {
-    width: 100%;
+    display: flex;
+}
 
+nav a {
+    position: relative;
+}
+
+#nav-opcoes {
+    width: 100%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: end;
 }
 
 nav img {
     width: 200px;
-    margin-left: 30px;
     margin-top: 3vh;
+    margin-left: 30px;
 }
 
-.icone {
+#nav-opcoes img {
     width: 40px;
 }
 
-#icones {
-    margin-left: 60%;
+/* FOOTER */
+footer {
+    display: flex;
+    margin-top: auto;
+    background-color: #D1D1D1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-/* ===== TOPO =========== */
+.conteudo-footer {
+    display: flex;
+}
+
+p {
+    padding-top: 5px;
+    font-size: 0.8em;
+    color: #162E33;
+}
+
+.contato ul {
+    display: flex;
+}
+
+.contato ul li {
+    list-style-type: none;
+    font-size: 0.8em;
+}
+
+.contato ul li a {
+    color: #162E33;
+}
+
 .navegacao {
-    position: absolute;
+    width: 100%;
+    height: 100%;
     top: 0;
     left: 0;
-    height: 100%;
-    width: 100%;
-    
     background-image: url(../img/fundo-grunge3.jpg);
     background-size: 100%;
+    position: absolute;
 }
 
 .baixo {
-    display: block;
-    position: absolute;
+    width: 100%;
+    height: 100%;
     top: 0;
     left: 0;
-    height: 100%;
-    width: 100%;
     background-color: rgba(0, 0, 0, 0.8);
+    display: block;
+    position: absolute;
 }
 
 .cima {
-    position: relative;
-    height: 100%;
     width: 100%;
+    height: 100%;
+    position: relative;
 }
-/* ============= */
+
 .colocar-ao-lado {
     display: flex;
 }
 
 .opcoes {
-    position: relative;
-    margin-left: 0%;
     width: 480px;
+    margin-left: 0%;
     margin-top: 10em;
+    position: relative;
+}
+
+.opcoes ul {
+    list-style-type: none;
+    padding-left: 0;
 }
 
 .descricao-pag {
-    position: relative;
-    margin-left: 15%;
-    width: 400px;
-    text-align: center;
+    width: 30%;
     margin-top: 7em;
-    color: #FFF;
+    margin-left: 15%;
+    text-align: center;
+    position: relative;
 }
+
 .descricao-pag h1 {
+    color: #FFF;
     font-family: 'Lato', sans-serif;
-    color: #FFF;
 }
+
+.descricao-pag P {
+    color: #F7F7F7;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+}
+
 .botao {
-    color: #FFF;
     text-align: end;
     border-radius: 0px 100px 100px 0px;
     border: 2px solid transparent;
@@ -134,82 +153,99 @@ nav img {
     font-weight: bold;
 }
 
-#primeiro-botao{
+#primeiro-botao {
     width: 460px;
-    background-color: #F3036B;
+    color: #FFF;
+    background-color: #1B4049;
 }
-#primeiro-botao:hover{
+
+#primeiro-botao:hover {
     width: 480px;
     color: #FFF;
 }
 
-#segundo-botao{
+#segundo-botao {
     width: 420px;
-    background-color: #AC045D;
+    color: #FFF;
+    background-color: #139FB6;
 }
-#segundo-botao:hover{
+
+#segundo-botao:hover {
     width: 440px;
-    color: #FFF; 
 }
 
-#terceiro-botao{
+#terceiro-botao {
     width: 380px;
-    background-color: #13414C;
+    background-color: #FFFFFF;
+    color: #1D2024;
 }
-#terceiro-botao:hover{
+
+#terceiro-botao:hover {
     width: 400px;
-    color: #FFF;
+    color: #1D2024;
 }
 
-#quarto-botao{
+#quarto-botao {
     width: 340px;
-    background-color: #007271;
-}
-#quarto-botao:hover{
-    width: 360px;
-    color: #FFF;
+    background-color: #D1D1D1;
+    color: #1D2024;
 }
 
-#quinto-botao{
-    width: 300px;
-    background-color: #606060;
+#quarto-botao:hover {
+    width: 360px;
+    color: #1D2024;
 }
-#quinto-botao:hover{
+
+#quinto-botao {
+    width: 300px;
+    color: #FFF;
+    background-color: #475153;
+}
+
+#quinto-botao:hover {
     width: 320px;
     color: #FFF;
 }
-/* ==================================== */
-.section{
+
+/* BODY */
+.section {
     margin-top: 55%;
 }
 
-.secao{
+.secao {
     margin-top: 15%;
 }
-.topo-section{
-    color: #3F9695;
+
+.topo-section {
     margin-left: 10%;
 }
 
-.topo-section h2{
+.topo-section h2 {
+    font-size: 35px;
     font-family: 'Lato', sans-serif;
-    color: #FFF;
+    color: #139FB6;
 }
 
-.filmes{
+.topo-section p {
+    color: #F7F7F7;
+    font-size: 1em;
+    font-family: 'Lato', sans-serif;
+}
+
+.filmes {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.filme{
+.filme {
     position: relative;
     text-align: center;
 }
 
-.filme a img{
+.filme a img {
     margin: 3%;
-    width: 250px; 
+    width: 250px;
     height: 360px;
 }
 
@@ -217,7 +253,7 @@ nav img {
     width: 130px;
     color: #FFF;
     background-color: transparent;
-    border: 2px solid #007271;
+    border: 1px solid #606060    ;
     padding: 6px;
     font-size: 12px;
     border-radius: 50px;
@@ -225,16 +261,19 @@ nav img {
 }
 
 #botao-locacao:hover {
-    background-color: #007271;
+    /* background-color: #139FB6; */
     border: none;
-    color: #FFF;
-    border: 2px solid #007271;
+    color: #F7F7F7;
+    border: 1px solid #139FB6;
 }
 
-.voltar-topo{
+.voltar-topo {
     text-align: end;
     margin-right: 10%;
 }
-.voltar-topo a{
-    color: #3F9695;
+
+.voltar-topo a {
+    color: #139FB6;
+    font-size: 1.3em;
+    font-family: 'Lato', sans-serif;
 }

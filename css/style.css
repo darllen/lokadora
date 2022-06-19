@@ -4,11 +4,12 @@
 
 html {
     height: 100%;
-    min-height: 100%;
+    width: 100%;
 }
 
 body {
-    background-color: #23282E;
+    margin: 0;
+    background-color: #1D2024;
     /*para o footer ficar lá em baixo-->*/
     display: flex;
     flex-direction: column;
@@ -19,13 +20,7 @@ a {
     text-decoration: none;
 }
 
-footer {
-    margin-top: auto;
-    width: 100%;
-    background-color: #007271;
-}
-
-/* =====RECOVER=========== */
+/* MENU DE NAVEGAÇÃO */
 nav {
     display: flex;
 }
@@ -35,8 +30,10 @@ nav a {
 }
 
 #nav-opcoes {
-    margin-left: 60%;
-    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    margin-right: 5%;
 }
 
 nav img {
@@ -45,74 +42,131 @@ nav img {
     margin-top: 3vh;
 }
 
-
 #nav-opcoes img {
     width: 40px;
 }
 
-.card {
-    margin-left: 35%;
+/* FOOTER */
+footer {
+    display: flex;
+    margin-top: auto;
+    background-color: #D1D1D1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-/* ================================= */
+
+.conteudo-footer {
+    display: flex;
+}
+
+p {
+    padding-top: 5px;
+    font-size: 0.8em;
+    color: #162E33;
+}
+
+.contato ul {
+    display: flex;
+}
+
+.contato ul li {
+    list-style-type: none;
+    font-size: 0.8em;
+}
+
+.contato ul li a {
+    color: #162E33;
+}
+
+/* BODY */
 .pai {
-    margin-top: 10vh;
+    /* centralizar horiz e verti */
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    /* colocar uma div ao lado da outra */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#container-a {
-    background: rgba(255, 255, 255, 0.1);
+#filho1 {
     width: 300px;
     height: 400px;
-    position: relative;
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 5px 0px 0px 5px;
+    position: relative;
 }
 
-#container-a img {
-    background: rgba(255, 255, 255, 0.001);
-    width: 250px;
-    /* CENTRALIZAR -->*/
+#filho2 {
+    width: 400px;
+    height: 400px;
+    color: #162E33;
+    background-color: #F7F7F7;
+    border-radius: 0px 5px 5px 0px;
+    /* centralizar -->*/
+    position: relative;
+}
+
+#filho1 img {
+    width: 200px;
+    /*background: rgba(255, 255, 255, 0.001);
+     centralizar img -->*/
     position: absolute;
-    left: 0;
-    right: 0;
     top: 0;
     bottom: 0;
+    right: 0;
+    left: 0;
     margin: auto;
     max-width: 100%;
     max-height: 100%;
 }
 
-#container-b {
-    background-color: #FFFF;
-    width: 400px;
-    height: 400px;
-    color: #13414C;
-    /* CENTRALIZAR -->*/
-    position: relative;
-    border-radius: 0px 5px 5px 0px;
+#filho2 #topo-b {
+    text-align: center;
+    margin: 10%;
+    color: #162E33;
 }
 
 .formulario {
-    margin-top: 2%;
-    position: absolute;
     left: 0;
     right: 0;
+    margin-top: 2%;
+    text-align: center;
 }
 
-#container-b #topo-b {
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 10%;
-    color: #13414C;
+.entradas {
+    position: relative;
 }
 
-.inputs {
-    width: 45%;
-    height: 25px;
+.entradas input {
+    width: 60%;
+    height: 2rem;
+    border: none;
     border-radius: 3px;
-    margin-left: 26%;
+    box-sizing: border-box;
+    box-shadow: 0 0 3px rgba(83, 27, 27, 0.3);
+    padding-left: 3.25em;
+    margin-bottom: 3%;
+    position: relative;
+}
+
+.entradas input:focus {
+    border: 1px solid #139FB6;
+    outline: none;
+}
+
+.icone img {
+    width: 1.3em;
+    height: 1.3em;
+    left: 22%;
+    top: 0.3em;
+    background-size: cover;
+    z-index: 100;
+    position: absolute;
 }
 
 #links {
@@ -120,54 +174,37 @@ nav img {
 }
 
 #links a {
-    color: #F3036B;
+    color: #139FB6;
 }
 
 #links a:hover {
-    color: #AC045D;
+    color: #139FB6;
 }
 
 #links #recover {
     margin-left: 10%;
 }
 
+.alinhar-botao {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
 #botao {
-    width: 30%;
+    width: 130px;
+    height: 35px;
     color: #FFF;
-    background-color: #007271;
+    background-color: #139FB6;
     border: none;
-    padding: 10px;
+    text-align: center;
     font-size: 15px;
     margin-top: 4%;
-    margin-left: 35%;
     font-weight: bold;
 }
 
 #botao:hover {
-    background-color: #13414C;
     border: none;
-    color: #FFF;
-}
-
-.conteudo-footer p {
-    padding-top: 15px;
-    text-align: center;
-    align-items: center;
-    font-size: 14px;
-}
-
-.contato ul {
-    display: flex;
-    margin-left: 38%;
-    bottom: 25px;
-}
-
-.contato ul li {
-    list-style-type: none;
-    padding-right: 17px;
-    font-size: 13px;
-}
-
-.contato ul li a {
-    color: #FFF;
+    box-shadow: 0 0 5px rgba(83, 27, 27, 0.3);
 }

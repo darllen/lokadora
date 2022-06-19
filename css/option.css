@@ -3,29 +3,25 @@
 }
 
 html {
+    width: 100%;
     height: 100%;
-    min-height: 100%;
 }
 
-body {
-    background-color: #23282E;
+body { 
+    background-color: #1D2024;
+    margin: 0;
     /*para o footer ficar lá em baixo-->*/
+    min-height: 100%;
+    min-width: 100%;
     display: flex;
     flex-direction: column;
-    min-height: 100%;
 }
 
 a {
     text-decoration: none;
 }
 
-footer {
-    margin-top: auto;
-    width: 100%;
-    background-color: #007271;
-}
-
-/* ===== NAVEGAÇÃO =========== */
+/* MENU DE NAVEGAÇÃO */
 nav {
     display: flex;
 }
@@ -35,38 +31,70 @@ nav a {
 }
 
 #nav-opcoes {
-    margin-left: 60%;
-    position: relative;
+    width: 100%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: end;
 }
 
 nav img {
     width: 200px;
-    margin-left: 30px;
     margin-top: 3vh;
+    margin-left: 30px;
 }
-
 
 #nav-opcoes img {
     width: 40px;
 }
 
-/* ==================== */
+/* FOOTER */
+footer {
+    display: flex;
+    margin-top: auto;
+    background-color: #D1D1D1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.conteudo-footer {
+    display: flex;
+}
+
+p {
+    padding-top: 5px;
+    font-size: 0.8em;
+    color: #162E33;
+}
+
+.contato ul {
+    display: flex;
+}
+
+.contato ul li {
+    list-style-type: none;
+    font-size: 0.8em;
+}
+
+.contato ul li a {
+    color: #162E33;
+}
+
+/* BODY */
 #options {
     text-align: center;
-    /* margin-top: 10%;
-    margin-bottom: 10%; */
     justify-content: center;
     align-items: center;
 }
 
 #options a {
-    padding-right: 2.5%;
-    padding-left: 2.5%;
+    padding: 2.5%;
     position: relative;
 }
 
 #options a img {
-    width: 150px;
+    width: 9rem;
 }
 
 h3 {
@@ -96,7 +124,7 @@ h3 {
     margin-left: 10%;
 }
 .sobre h4{
-    color: #F3036B;
+    color: #139FB6;
     
 }
 .sobre ul li{
@@ -104,30 +132,3 @@ h3 {
 }
 
 
-/* FOOTER */
-.conteudo-footer p {
-    padding-top: 15px;
-    text-align: center;
-    align-items: center;
-    font-size: 14px;
-}
-
-/* .contato{
-    margin-left: 6%;
-} */
-
-.contato ul {
-    display: flex;
-    margin-left: 38%;
-    bottom: 25px;
-}
-
-.contato ul li {
-    list-style-type: none;
-    padding-right: 17px;
-    font-size: 13px;
-}
-
-.contato ul li a {
-    color: #FFF;
-}
