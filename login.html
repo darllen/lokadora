@@ -4,38 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <title>LOKADORA - Bem-vindo!</title>
-    <link rel="stylesheet" type="text/css" href="css/login.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 
 <body>
     <div class="pai">
-        <div id="container-a">
+        <div id="filho1">
             <img src="img/logo1.png">
         </div>
 
-        <div id="container-b">
+        <div id="filho2">
             <div id="topo-b">
                 <h2>Login...</h2>
                 <p>Faça o login para experimentar os mais completos conteúdos</p>
             </div>
 
-            <div class="formulario">
-                <div>
-                    <label class="inputs">Usuário</label><br>
-                    <input class="inputs" type="text" id="inputUser" placeholder=" Usuário"><br><br>
-                    <label class="inputs">Senha</label><br>
-                    <input class="inputs" type="password" id="inputPassword" value="  secret">
-                </div><br>
-
-                <div id="links">
-                    <a href="newUser.html">Novo</a>
-                    <a id="recover" href="recover.html">Esqueceu a senha?</a><br><br>
+            <form method="post" class="formulario">
+                <div class="entradas">
+                    <div class="icone"><img src="../img/2.png" alt=""></div>
+                    <input class="input" type="text" placeholder="Usuário" name="usuario" />
+                    
                 </div>
 
-                <div>
-                    <a href="index.html"><button id="botao">ENTRAR</button></a>
+                <div class="entradas">
+                    <div class="icone"><img src="../img/3.png" alt=""></div>
+                    <input class="input" type="password" placeholder="Senha" name="senha" />
                 </div>
+            </form><br>
+
+
+            <div id="links">
+                <a href="newUser.html">Novo</a>
+                <a id="recover" href="recover.html">Esqueceu a senha?</a><br><br>
             </div>
+
+            <div class="alinhar-botao">
+                <a href="index.html">
+                    <button id="botao">ENTRAR</button>
+                </a>
+            </div>
+
         </div>
     </div>
 
@@ -48,7 +56,7 @@
                     <li><a href="https://github.com/darllen" target="_blank">GitHub |</a></li>
                     <li><a href="mailto:jamillymilly10@hotmail.com" target="_blank">E-mail</a></li>
                 </ul>
-            </div> 
+            </div>
         </div>
     </footer>
 </body>
