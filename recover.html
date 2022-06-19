@@ -4,39 +4,70 @@
 <head>
     <meta charset="UTF-8">
     <title>Recover Password</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 
 <body>
-    <!-- CABEÇALHO -->
-    <fieldset style="width: 500px; background-color: #EEDDFE;">
-        <a href="login.html">Voltar</a><br>
-        <a href="recover.html">
-            <img src="img/logo.png" style="width: 200px;">
+    <!-- MENU DE NAVEGAÇÃO -->
+    <nav>
+        <a href="login.html">
+            <img src="img/logo.png">
         </a>
-    </fieldset><br>
+        <div id="nav-opcoes">
+            <a href="login.html">
+                <img src="img/seta-esquerda.png">
+            </a>
+            <a href="">
+                <img src="img/seta-direita.png">
+            </a>
+            <a href="login.html">
+                <img src="img/sair.png">
+            </a>
+        </div>
+    </nav>
 
     <!-- CORPO -->
-    <form action="">
-        <fieldset style="width: 500px">
-            <legend>Recuperar senha</legend>
-            <p>
-                <label>E-mail:</label>
-                <input type="text" id="email">
-            </p>
+    <div class="pai">
+        <div id="filho2">
+            <div id="topo-b">
+                <h2>Recuperar senha</h2>
+                <p>Não se preocupe, te enviaremos um e-mail com sua nova senha</p>
+            </div><br>
 
-            <p>
-                <a href="login.html">
-                    <input type="button" value="Entrar" onclick="enviarEmail()">
-                </a>
-                
-                <script>
-                    function enviarEmail() {
-                        alert("Senha enviada para o e-mail informado.");
-                    }
-                </script>
-            </p>
-        </fieldset>
-    </form>
+            <div class="formulario">
+                <div class="entradas">
+                    <div class="icone"><img src="../img/2.png" alt=""></div>
+                    <input class="input" type="text" placeholder="E-mail" name="email" />
+                </div><br><br>
+
+                <div>
+                    <a href="login.html">
+                        <button id="botao" onclick="enviarEmail()">ENVIAR</button>
+                    </a>
+                    <script>
+                        function enviarEmail() {
+                            alert("Senha enviada para o e-mail informado.");
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="conteudo-footer">
+            <p> Contacte a pessoa desenvolvedora </p>
+            <div class="contato">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/jamilly-anunciada/" target="_blank">LinkedIn |</a></li>
+                    <li><a href="https://github.com/darllen" target="_blank">GitHub |</a></li>
+                    <li><a href="mailto:jamillymilly10@hotmail.com" target="_blank">E-mail</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
