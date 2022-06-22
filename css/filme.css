@@ -10,111 +10,106 @@ html {
 }
 
 body {
-    width: auto;
-    height: auto;
-    background-color: #13414C;
+    background-color: #1D2024;
+    margin: 0;
     /*para o footer ficar lá em baixo-->*/
+    min-height: 100%;
+    min-width: 100%;
     display: flex;
     flex-direction: column;
-    min-height: 100%;
 }
 
 a {
     text-decoration: none;
 }
 
+/* FOOTER */
 footer {
+    background-color: #D1D1D1;
     margin-top: auto;
-    width: 100%;
-    background-color: #007271;
-}
-
-.conteudo-footer p {
-    padding-top: 15px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    font-size: 14px;
+    text-align: center;
 }
 
-/* .contato{
-    margin-left: 6%;
-} */
+.conteudo-footer {
+    display: flex;
+}
+
+p {
+    color: #1D2024;
+    padding-top: 5px;
+    font-size: 0.8em;
+}
 
 .contato ul {
     display: flex;
-    margin-left: 38%;
-    bottom: 25px;
 }
 
 .contato ul li {
     list-style-type: none;
-    padding-right: 17px;
-    font-size: 13px;
+    font-size: 0.8em;
 }
 
 .contato ul li a {
-    color: #FFF;
+    color: #1D2024;
 }
 
-/* ===== NAVEGAÇÃO =========== */
+/* BARRA DE DE NAVEGAÇÃO */
 nav {
-    width: 100%;
-
+    display: flex;
 }
 
+nav a {
+    position: relative;
+}
+
+#nav-opcoes {
+    width: 100%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: end;
+}
 
 nav img {
     width: 200px;
-    margin-left: 30px;
     margin-top: 3vh;
+    margin-left: 30px;
 }
 
-
-.icone {
+#nav-opcoes img {
     width: 40px;
 }
 
-#test {
-    margin-left: 60%;
-}
-
-
-/* ===== TOPO =========== */
-
+/* TOPO */
 .navegacao {
-    position: relative;
-    top: 0;
-    left: 0;
-    height: 100%;
     width: 100%;
+    height: 100%;
     overflow: hidden;
+    position: relative;
 }
 
-#matrix{
-    
+#matrix {
     background-image: url(../img/poster-matrix.jpg);
 }
-#cidadeperdida{
-    
+
+#cidadeperdida {
     background-image: url(../img/poster-cidadeperdida.webp);
 }
 
-
-
 .baixo {
+    width: 100%;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.7);
     display: block;
     position: absolute;
-    top: 0;
-    left: 0;
-    height: 450px;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .cima {
-    position: relative;
     width: auto;
-    height: 450px;
+    height: 500px;
+    position: relative;
 }
 
 #title {
@@ -123,28 +118,27 @@ nav img {
     font-size: 50px;
 }
 
-/* ============= */
-.colocar-ao-lado {
+/* BOTOES */
+.botoes {
     display: flex;
 }
 
-.nome {
-    position: relative;
+.botao-trailer {
     margin-left: 10%;
-    margin-top: 55px;
-    
+    margin-top: 4%;
+    position: relative;
 }
 
-.email {
-    position: relative;
+.botao-locacao {
     margin-left: 4%;
-    margin-top: 55px;
+    margin-top: 4%;
+    position: relative;
 }
 
 .botao {
     width: 150px;
     color: #FFF;
-    background-color: #F3036B;
+    background-color: #139FB6;
     border: 2px solid transparent;
     padding: 10px;
     font-size: 15px;
@@ -152,69 +146,82 @@ nav img {
 }
 
 .botao:hover {
-    color: #FFF;
-    background-color: #AC045D;
+    color: #139FB6;
+    background-color: #D1D1D1;
 }
 
-/* ============= */
-#informacoes{
-    margin-left: 10%;
-    margin-top: 2%;
-    margin-right: 13%;
-    color: #FFF;
-}
-#atores img{
-    margin-top: 8%;
-    width: 150px;
-    height: 150px;
-    margin-left: 50px;
-}
-#descricao{
-    background-color: #FFF;
-    padding-bottom: 4%;
-    margin-top: 10%;
+/* DESCRICAO */
+#descricao {
+    background-color: #139FB6;
+    display: flex;
+    justify-content: center;
 }
 
-#descricao h3{
-    margin-left: 10%;
-    margin-top: 3%;
+.text {
+    width: 85%;
+    color: #000000;
+    background-color: #FFFFFF;
+    padding: 4%;
+    justify-content: center;
+    position: relative;
+}
+
+.text h3 {
+    color: #139FB6;
+    margin-left: 5%;
     font-family: 'Lato', sans-serif;
 }
-.text{
-    margin-top: 2%;
-    text-align: center;
-    width: 50%;
-    color: #000000;
 
+.text-1 {
+    width: 90%;
+    margin-left: 5%;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+/* INFORMACOES DO FILME */
+.informacoes {
+    color: #F7F7F7;
+    margin-top: 5%;
+    margin-left: 12%;
+    display: flex;
     position: relative;
-    text-align: center;
-    
-}
-#text-1{
-    margin-left: 10%;
-}
-#text-2{
-    margin-left: 60px;
-    margin-right: 10%;
 }
 
-.trailer{
+#atores {
+    margin-left: 8%;
+}
+
+#atores img {
+    max-width: 150px;
+    max-height: 150px;
+    margin: 15px;
+}
+
+.trailer {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 10%;
 }
 
-.mais-detalhes {
+.trailer iframe {
+    border: 3px solid #139FB6;
+}
+
+.botoes-de-baixo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.botão-detalhes {
     position: relative;
-    margin-left: 36%;
-    margin-top: 50px;
-    
 }
 
 .locacao {
-    position: relative;
     margin-left: 4%;
-    margin-top: 50px;
-    
+    position: relative;
 }
