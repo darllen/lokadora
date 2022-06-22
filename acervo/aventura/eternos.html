@@ -4,67 +4,129 @@
 <head>
     <meta charset="UTF-8">
     <title>Eternos</title>
+    <link rel="stylesheet" type="text/css" href="../../css/filme.css" />
 </head>
 
 <body>
-    <!-- CABEÇALHO -->
-    <fieldset style="width: 500px; background-color: #EEDDFE;">
-        <a href="../../login.html">Sair</a> <br>
-        <a href="../../index.html"><img src="../../img/logo.png" style="width: 200px;"></a>
-    </fieldset>
+    <!-- MENU DE NAVEGAÇÃO -->
+    <div class='navegacao' id="eternos">
+        <div class='baixo'></div>
+        <div class='cima'>
+            <nav>
+                <a id="logo" href="../../login.html">
+                    <img src="../../img/logo.png">
+                </a>
+                <div id="nav-opcoes">
+                    <a href="../acervo.html#aventura">
+                        <img src="../../img/seta-esquerda.png">
+                    </a>
+                    <a href="">
+                        <img src="../../img/seta-direita.png">
+                    </a>
+                    <a href="../../login.html">
+                        <img src="../../img/sair.png">
+                    </a>
+                </div>
+            </nav>
 
-    <!-- NAVEGAÇÃO -->
-    <fieldset style="width: 500px;">
-        <a href="../acervo.html"><img src="../../img/seta_esquerda.jpg" style="width: 50px;"></a> &nbsp &nbsp &nbsp
-        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-        &nbsp &nbsp &nbsp &nbsp &nbsp
+            <h1 id="title" style="color: white;">ETERNOS</h1>
 
-        <label>Eternos</label>
-        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-
-        <a href=""><img src="../../img/seta_direita.jpg" style="width: 50px;"></a>
-    </fieldset>
+            <div class="botoes">
+                <div class="botao-trailer">
+                    <a href="#trailer">
+                        <button class="botao">VER TRAILER</button>
+                    </a>
+                </div>
+                <div class="botao-locacao">
+                    <a href="../../locacao.html">
+                        <button class="botao">LOCAÇÃO</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- CORPO -->
-    <fieldset style="width: 500px;">
-        <iframe width="500" height="315" src="https://www.youtube.com/embed/PJza3ZaFeAU" title="YouTube video player"
+    <div class="informacoes">
+        <div class="text-2">
+            <h4>Diretor: Chloé Zhao</h4>
+            <h4>Ano de lançamento: 2021</h4>
+            <h4>Atores principais: </h4>
+            <ul>
+                <li>Gemma Chan</li>
+                <li>Richard Madden</li>
+                <li>Salma Hayek</li>
+                <li>Angelina Jolie</li>
+            </ul>
+        </div>
+
+        <div id="atores">
+            <img src="../../img/eternos-ator1.png">
+            <img src="../../img/eternos-ator2.png">
+            <img src="../../img/eternos-ator3.png">
+            <!-- <img src="../../img/cidadeperdida-ator4.png"> -->
+        </div>
+    </div>
+
+    <div id="trailer">
+        <iframe width="700" height="400" src="https://www.youtube.com/embed/PJza3ZaFeAU" title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe><br>
+            allowfullscreen></iframe>
+    </div>
 
-        <h4>Diretor: Chloé Zhao</h4>
-        <h4>Ano de lançamento: 2021</h4>
-        <h4>Atores principais: </h4>
-        <ul>
-            <li>Gemma Chan</li>
-            <li>Richard Madden</li>
-            <li>Salma Hayek</li>
-            <li>Angelina Jolie</li>
-        </ul>
+    <div class="botoes-de-baixo">
+        <div class="botão-detalhes">
+            <a href="https://www.papodecinema.com.br/filmes/eternos/videos/" target="_blank">
+                <button class="botao">MAIS DETALHES</button>
+            </a>
+        </div>
+        <div class="locacao">
+            <a href="../../locacao.html" target="_blank">
+                <button class="botao">LOCAÇÃO</button>
+            </a>
+        </div>
+    </div>
+    <div id="descricao">
+        <div class="text">
+            <h3>DESCRIÇÃO</h3>
+            <p class="text-1">
+                Eternos são seres super dotados com características como imortalidade e manipulação de energia cósmica,
+                e
+                eles são frutos de experiências fracassadas de seu próprio criador, o Celestial Arishem, desde a criação
+                da
+                Terra há milhões de anos. Destinados a salvar o mundo e a raça humana dos Deviantes, seres também
+                criados
+                pelo Celestial, os Eternos então derrotam tais seres e seguem caminhos diferentes, esperando que seu
+                criador
+                volte com boas novas. Mas após séculos e milênios aguardando ele, o grupo de heróis imortais agora
+                precisa
+                se preparar para uma nova ameaça, e precisam lutar contra os Deviantes novamente para garantir a
+                segurança
+                da humanidade. Muitos conflitos internos podem surgir, entre o amor que sentem pela Terra e a
+                necessidade de
+                protegê-la acima de tudo, e a fé naquilo que está acima deles. Cada um deverá lutar pelo o que acredita,
+                e
+                defender o que for mais importante. Eternos se passa pouco tempo após os acontecimentos de Vingadores:
+                Ultimato (2019), dentro do universo MCU, inspirado nos quadrinhos, em adaptação da Marvel Studios.
+            </p>
+        </div>
+    </div>
 
-        <h4>Descrição do filme:</h4>
-        <p>
-            Eternos são seres super dotados com características como imortalidade e manipulação de energia cósmica, e
-            eles são frutos de experiências fracassadas de seu próprio criador, o Celestial Arishem, desde a criação da
-            Terra há milhões de anos. Destinados a salvar o mundo e a raça humana dos Deviantes, seres também criados
-            pelo Celestial, os Eternos então derrotam tais seres e seguem caminhos diferentes, esperando que seu criador
-            volte com boas novas. Mas após séculos e milênios aguardando ele, o grupo de heróis imortais agora precisa
-            se preparar para uma nova ameaça, e precisam lutar contra os Deviantes novamente para garantir a segurança
-            da humanidade. Muitos conflitos internos podem surgir, entre o amor que sentem pela Terra e a necessidade de
-            protegê-la acima de tudo, e a fé naquilo que está acima deles. Cada um deverá lutar pelo o que acredita, e
-            defender o que for mais importante. Eternos se passa pouco tempo após os acontecimentos de Vingadores:
-            Ultimato (2019), dentro do universo MCU, inspirado nos quadrinhos, em adaptação da Marvel Studios.
-        </p>
-
-        <a href="https://www.papodecinema.com.br/filmes/eternos/videos/" target="_blank">Mais detalhes</a>
-        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-        <a href="../../locacao.html" target="_blank">Locação</a>
-
-    </fieldset>
+    <!-- FOOTER -->
+    <footer>
+        <div class="conteudo-footer">
+            <p> Contacte a pessoa desenvolvedora </p>
+            <div class="contato">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/jamilly-anunciada/" target="_blank">LinkedIn |</a></li>
+                    <li><a href="https://github.com/darllen" target="_blank">GitHub |</a></li>
+                    <li><a href="mailto:jamillymilly10@hotmail.com" target="_blank">E-mail</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
