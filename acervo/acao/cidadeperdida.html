@@ -4,62 +4,118 @@
 <head>
     <meta charset="UTF-8">
     <title>Cidade Perdida</title>
+    <link rel="stylesheet" type="text/css" href="../../css/filme.css" />
 </head>
 
 <body>
-    <!-- CABEÇALHO -->
-    <fieldset style="width: 500px; background-color: #EEDDFE;">
-        <a href="../../login.html">Sair</a><br>
-        <a href="../../index.html"><img src="../../img/logo.png" style="width: 200px;"></a>
-    </fieldset>
+    <!-- MENU DE NAVEGAÇÃO -->
+    <div class='navegacao' id="cidadeperdida">
+        <div class='baixo'></div>
+        <div class='cima'>
+            <nav>
+                <a id="logo" href="../../login.html">
+                    <img src="../../img/logo.png">
+                </a>
+                <div id="nav-opcoes">
+                    <a href="../acervo.html#acao">
+                        <img src="../../img/seta-esquerda.png">
+                    </a>
+                    <a href="">
+                        <img src="../../img/seta-direita.png">
+                    </a>
+                    <a href="../../login.html">
+                        <img src="../../img/sair.png">
+                    </a>
+                </div>
+            </nav>
 
-    <!-- NAVEGAÇÃO -->
-    <fieldset style="width: 500px;">
-        <a href="../acervo.html"><img src="../../img/seta_esquerda.jpg" style="width: 50px;"></a> &nbsp &nbsp &nbsp
-        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-        <label>Cidade Perdida</label>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-        &nbsp
-        &nbsp &nbsp &nbsp &nbsp
-        <a href=""><img src="../../img/seta_direita.jpg" style="width: 50px;"></a>
-    </fieldset>
+            <h1 id="title" style="color: white;">CIDADE PERDIDA</h1>
 
+            <div class="botoes">
+                <div class="botao-trailer">
+                    <a href="#trailer">
+                        <button class="botao">VER TRAILER</button>
+                    </a>
+                </div>
+                <div class="botao-locacao">
+                    <a href="../../locacao.html">
+                        <button class="botao">LOCAÇÃO</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- CORPO -->
-    <fieldset style="width: 500px;">
-        <iframe width="500" height="315" src="https://www.youtube.com/embed/USh_vwJ2j98" title="YouTube video player"
+    <div class="informacoes">
+        <div class="text-2">
+            <h4>Diretor: Aaron Nee e Adam Nee</h4>
+            <h4>Ano de lançamento: 2022</h4>
+            <h4>Atores principais: </h4>
+            <ul>
+                <li>Sandra Bullock</li>
+                <li>Channing Tatum</li>
+                <li>Daniel Radcliffe</li>
+                <li>Brad Pitt</li>
+            </ul>
+        </div>
+
+        <div id="atores">
+            <img src="../../img/cidadeperdida-ator1.png">
+            <img src="../../img/cidadeperdida-ator2.png">
+            <img src="../../img/cidadeperdida-ator3.png">
+            <!-- <img src="../../img/cidadeperdida-ator4.png"> -->
+        </div>
+    </div>
+
+    <div id="trailer">
+        <iframe width="700" height="400" src="https://www.youtube.com/embed/USh_vwJ2j98" title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe><br>
+            allowfullscreen></iframe>
+    </div>
 
-        <h4>Diretor: Aaron Nee e Adam Nee</h4>
-        <h4>Ano de lançamento: 2022</h4>
-        <h4>Atores principais: </h4>
-        <ul>
-            <li>Sandra Bullock</li>
-            <li>Channing Tatum</li>
-            <li>Daniel Radcliffe</li>
-            <li>Brad Pitt</li>
-        </ul>
+    <div class="botoes-de-baixo">
+        <div class="botão-detalhes">
+            <a href="https://www.papodecinema.com.br/filmes/cidade-perdida/amp/" target="_blank">
+                <button class="botao">MAIS DETALHES</button>
+            </a>
+        </div>
+        <div class="locacao">
+            <a href="../../locacao.html" target="_blank">
+                <button class="botao">LOCAÇÃO</button>
+            </a>
+        </div>
+    </div>
+    <div id="descricao">
+        <div class="text">
+            <h3>DESCRIÇÃO</h3>
+            <p class="text-1">
+                A brilhante, porém reclusa, autora Loretta Sage (Sandra Bullock) escreve sobre lugares exóticos em seus
+                romances populares de aventura, cujas capas são estreladas pelo belo modelo Alan (Channing Tatum), que
+                tem dedicado sua vida a personificar o personagem herói, Dash. Durante a turnê de promoção de seu novo livro
+                com Alan, Loretta é raptada por um bilionário excêntrico (Daniel Radcliffe), para que ela o guie ao tesouro
+                da cidade perdida descrita em seu livro recente. A fim de provar que é possível ser um herói na vida real,
+                não somente nas páginas de seus livros, Alan parte para resgatá-la. Forçados a viver uma aventura épica na
+                selva, o par improvável precisa trabalhar junto para sobreviver e encontrar o antigo tesouro, antes que
+                seja perdido para sempre.
+            </p>
+        </div>
+    </div>
 
-        <h4>Descrição do filme:</h4>
-        <p>
-            A brilhante, porém reclusa, autora Loretta Sage (Sandra Bullock) escreve sobre lugares exóticos em seus
-            romances populares de aventura, cujas capas são estreladas pelo belo modelo Alan (Channing Tatum), que tem
-            dedicado sua vida a personificar o personagem herói, Dash. Durante a turnê de promoção de seu novo livro com
-            Alan, Loretta é raptada por um bilionário excêntrico (Daniel Radcliffe), para que ela o guie ao tesouro da
-            cidade perdida descrita em seu livro recente. A fim de provar que é possível ser um herói na vida real, não
-            somente nas páginas de seus livros, Alan parte para resgatá-la. Forçados a viver uma aventura épica na
-            selva, o par improvável precisa trabalhar junto para sobreviver e encontrar o antigo tesouro, antes que seja
-            perdido para sempre.
-        </p>
-
-        <a href="https://www.papodecinema.com.br/filmes/cidade-perdida/amp/" target="_blank">Mais detalhes</a>
-        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-        <a href="../../locacao.html" target="_blank">Locação</a>
-
-
-    </fieldset>
+    <!-- FOOTER -->
+    <footer>
+        <div class="conteudo-footer">
+            <p> Contacte a pessoa desenvolvedora </p>
+            <div class="contato">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/jamilly-anunciada/" target="_blank">LinkedIn |</a></li>
+                    <li><a href="https://github.com/darllen" target="_blank">GitHub |</a></li>
+                    <li><a href="mailto:jamillymilly10@hotmail.com" target="_blank">E-mail</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
