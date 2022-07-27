@@ -1,6 +1,4 @@
-* {
-    font-family: Courier, monospace;
-}
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
 
 html {
     width: 100%;
@@ -55,6 +53,7 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 
@@ -114,7 +113,9 @@ p {
 h3 {
     margin-left: 18%;
     margin-top: 5%;
-    color: gray;
+    color: rgb(134, 135, 139);
+    font-family: 'Lato';
+    font-size: 1.2em;
 }
 
 .centralizar {
@@ -137,11 +138,13 @@ h3 {
 
 .sobre {
     margin-left: 10%;
+    font-size: 1em;
+    font-family: 'Lato';
 }
 
 .sobre h4 {
     color: #139FB6;
-
+    font-size: 1.3em;
 }
 
 .sobre ul li {

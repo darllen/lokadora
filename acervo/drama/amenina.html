@@ -4,58 +4,117 @@
 <head>
     <meta charset="UTF-8">
     <title>A Menina que Roubava Livros </title>
+    <link rel="stylesheet" type="text/css" href="../../css/filme.css" />
 </head>
 
 <body>
-    <!-- CABEÇALHO -->
-    <fieldset style="width: 500px; background-color: #EEDDFE;">
-        <a href="../../login.html">Sair</a> <br>
-        <a href="../../index.html"><img src="../../img/logo.png" style="width: 200px;"></a>
-    </fieldset>
+    <!-- MENU DE NAVEGAÇÃO -->
+    <div class='navegacao' id="amenina">
+        <div class='baixo'></div>
+        <div class='cima'>
+            <nav>
+                <a id="logo" href="../../login.html">
+                    <img src="../imagens/logo.png">
+                </a>
+                <div id="nav-opcoes">
+                    <a href="../acervo.html#drama">
+                        <img src="../imagens/seta-esquerda.png">
+                    </a>
+                    <a href="">
+                        <img src="../imagens/seta-direita.png">
+                    </a>
+                    <a href="../../login.html">
+                        <img src="../imagens/sair.png">
+                    </a>
+                </div>
+            </nav>
 
-    <!-- NAVEGAÇÃO -->
-    <fieldset style="width: 500px;">
-        <a href="../acervo.html"><img src="../../img/seta_esquerda.jpg" style="width: 50px;"></a> &nbsp &nbsp &nbsp
+            <h1 id="title" style="color: white;">A MENINA QUE ROUBAVA LIVROS</h1>
 
-        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-        <label>A Menina que Roubava Livros </label>
-        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-
-        <a href=""><img src="../../img/seta_direita.jpg" style="width: 50px;"></a>
-    </fieldset>
-
+            <div class="botoes">
+                <div class="botao-trailer">
+                    <a href="#trailer">
+                        <button class="botao">VER TRAILER</button>
+                    </a>
+                </div>
+                <div class="botao-locacao">
+                    <a href="../locacao.html">
+                        <button class="botao">LOCAÇÃO</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- CORPO -->
-    <fieldset style="width: 500px;">
-        <iframe width="500" height="315" src="https://www.youtube.com/embed/J24AlOYHpVU" title="YouTube video player"
+    <div class="informacoes">
+        <div class="text-2">
+            <h4>Diretor: Brian Percival</h4>
+            <h4>Ano de lançamento: 2014</h4>
+            <h4>Atores principais: </h4>
+            <ul>
+                <li>Geoffrey Rush</li>
+                <li>Emily Watson</li>
+                <li>Sophie Nélisse</li>
+            </ul>
+        </div>
+
+        <div id="atores">
+            <img src="../imagens/amenina-ator1.png">
+            <img src="../imagens/amenina-ator2.png">
+            <img src="../imagens/amenina-ator3.png">
+        </div>
+    </div>
+
+    <div id="trailer">
+        <iframe width="700" height="400" src="https://www.youtube.com/embed/J24AlOYHpVU" title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe><br>
+            allowfullscreen></iframe>
+    </div>
 
-        <h4>Diretor: Brian Percival</h4>
-        <h4>Ano de lançamento: 2014</h4>
-        <h4>Atores principais: </h4>
-        <ul>
-            <li>Geoffrey Rush</li>
-            <li>Emily Watson</li>
-            <li>Sophie Nélisse
-        </ul>
+    <div class="botoes-de-baixo">
+        <div class="botão-detalhes">
+            <a href="https://www.papodecinema.com.br/filmes/a-menina-que-roubava-livros/#:~:text=vive%20na%20clandestinidade.-,Cr%C3%ADtica,em%20guerra%20com%20a%20Europa."
+                target="_blank">
+                <button class="botao">MAIS DETALHES</button>
+            </a>
+        </div>
+        <div class="locacao">
+            <a href="../locacao.html" target="_blank">
+                <button class="botao">LOCAÇÃO</button>
+            </a>
+        </div>
+    </div>
+    <div id="descricao">
+        <div class="text">
+            <h3>DESCRIÇÃO</h3>
+            <p class="text-1">
+                Durante a Segunda Guerra Mundial, uma jovem garota chamada Liesel Meminger (Sophie Nélisse)
+                sobrevive fora
+                de Munique através dos livros que ela rouba. Ajudada por seu pai adotivo (Geoffrey Rush), ela
+                aprende a ler
+                e partilhar livros com seus amigos, incluindo um homem judeu (Ben Schnetzer) que vive na
+                clandestinidade em
+                sua casa. Enquanto não está lendo ou estudando, ela realiza algumas tarefas para a mãe (Emily
+                Watson) e
+                brinca com a amigo Rudy (Nico Liersch).</p>
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <footer>
+        <div class="conteudo-footer">
+            <p> Contacte a pessoa desenvolvedora </p>
+            <div class="contato">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/jamilly-anunciada/" target="_blank">LinkedIn |</a></li>
+                    <li><a href="https://github.com/darllen" target="_blank">GitHub |</a></li>
+                    <li><a href="mailto:jamillymilly10@hotmail.com" target="_blank">E-mail</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
-        <h4>Descrição do filme:</h4>
-        <p>
-            Durante a Segunda Guerra Mundial, uma jovem garota chamada Liesel Meminger (Sophie Nélisse) sobrevive fora
-            de Munique através dos livros que ela rouba. Ajudada por seu pai adotivo (Geoffrey Rush), ela aprende a ler
-            e partilhar livros com seus amigos, incluindo um homem judeu (Ben Schnetzer) que vive na clandestinidade em
-            sua casa. Enquanto não está lendo ou estudando, ela realiza algumas tarefas para a mãe (Emily Watson) e
-            brinca com a amigo Rudy (Nico Liersch).
-        </p>
-
-        <a href="https://www.papodecinema.com.br/filmes/a-menina-que-roubava-livros/#:~:text=vive%20na%20clandestinidade.-,Cr%C3%ADtica,em%20guerra%20com%20a%20Europa."
-            target="_blank">Mais detalhes</a>
-        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-        <a href="../../locacao.html" target="_blank">Locação</a>
-
-    </fieldset>
 
 </body>
 

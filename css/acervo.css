@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
-
-* {
-    font-family: Courier, monospace;
+@font-face {
+    font-family: "Emphasis";
+    src: url("../fontes/Emphasis.ttf");
 }
 
 html {
@@ -57,6 +57,7 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .conteudo-footer {
@@ -126,52 +127,56 @@ p {
 
 .descricao-pag {
     width: 30%;
-    margin-top: 7em;
-    margin-left: 15%;
+    margin-top: 7%;
+    margin-left: 12%;
     text-align: center;
     position: relative;
 }
 
 .descricao-pag h1 {
     color: #FFF;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Emphasis';
+    letter-spacing: 2px;
+    font-size: 4em;
 }
 
 .descricao-pag P {
     color: #F7F7F7;
-    font-size: 18px;
+    font-size: 1.1em;
     font-family: 'Lato', sans-serif;
 }
 
 .botao {
     text-align: end;
     border-radius: 0px 100px 100px 0px;
-    border: 2px solid transparent;
+    border: none;
     padding: 10px;
     padding-right: 20px;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: bold;
+    font-family: 'Emphasis';
+    letter-spacing: 1.5px;
+    color: #FFF;
 }
 
 #primeiro-botao {
-    width: 460px;
-    color: #FFF;
+    width: 460px;  
     background-color: #1B4049;
 }
 
 #primeiro-botao:hover {
     width: 480px;
-    color: #FFF;
+    cursor: pointer;
 }
 
 #segundo-botao {
     width: 420px;
-    color: #FFF;
     background-color: #139FB6;
 }
 
 #segundo-botao:hover {
     width: 440px;
+    cursor: pointer;
 }
 
 #terceiro-botao {
@@ -182,7 +187,7 @@ p {
 
 #terceiro-botao:hover {
     width: 400px;
-    color: #1D2024;
+    cursor: pointer;
 }
 
 #quarto-botao {
@@ -192,19 +197,18 @@ p {
 }
 
 #quarto-botao:hover {
-    width: 360px;
-    color: #1D2024;
+    width: 360px;  
+    cursor: pointer;
 }
 
 #quinto-botao {
     width: 300px;
-    color: #FFF;
     background-color: #475153;
 }
 
 #quinto-botao:hover {
     width: 320px;
-    color: #FFF;
+    cursor: pointer;
 }
 
 /* BODY */
@@ -223,13 +227,14 @@ p {
 .topo-section h2 {
     font-size: 35px;
     font-family: 'Lato', sans-serif;
+    letter-spacing: 2px;
     color: #139FB6;
 }
 
 .topo-section p {
     color: #F7F7F7;
-    font-size: 1em;
-    font-family: 'Lato', sans-serif;
+    font-size: .9em;
+    font-family: sans-serif;
 }
 
 .filmes {
@@ -248,23 +253,29 @@ p {
     width: 250px;
     height: 360px;
 }
+.filme a img:hover{
+    width: 245px;
+    height: 355px;
+    border: 3px solid #139FB6;
+}
 
 #botao-locacao {
     width: 130px;
-    color: #FFF;
+    color: #606060;
     background-color: transparent;
     border: 1px solid #606060    ;
     padding: 6px;
-    font-size: 12px;
+    font-size: .7em;
     border-radius: 50px;
     margin-bottom: 9%;
+    font-family: 'Lato';
 }
 
 #botao-locacao:hover {
-    /* background-color: #139FB6; */
     border: none;
-    color: #F7F7F7;
     border: 1px solid #139FB6;
+    color: #139FB6;
+    cursor: pointer;
 }
 
 .voltar-topo {

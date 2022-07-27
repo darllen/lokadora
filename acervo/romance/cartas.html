@@ -4,36 +4,51 @@
 <head>
     <meta charset="UTF-8">
     <title>Cartas para Julieta</title>
+    <link rel="stylesheet" type="text/css" href="../../css/filme.css" />
 </head>
 
 <body>
-    <!-- CABEÇALHO -->
-    <fieldset style="width: 500px; background-color:#EEDDFE;">
-        <a href="../../login.html">Sair</a> <br>
-        <a href="../../index.html"><img src="../../img/logo.png" style="width: 200px;"></a>
-    </fieldset>
+    <!-- MENU DE NAVEGAÇÃO -->
+    <div class='navegacao' id="cartas">
+        <div class='baixo'></div>
+        <div class='cima'>
+            <nav>
+                <a id="logo" href="../../login.html">
+                    <img src="../imagens/logo.png">
+                </a>
+                <div id="nav-opcoes">
+                    <a href="../acervo.html#romance">
+                        <img src="../imagens/seta-esquerda.png">
+                    </a>
+                    <a href="">
+                        <img src="../imagens/seta-direita.png">
+                    </a>
+                    <a href="../../login.html">
+                        <img src="../imagens/sair.png">
+                    </a>
+                </div>
+            </nav>
 
-    <!-- NAVEGAÇÃO -->
-    <fieldset style="width: 500px;">
-        <a href="../acervo.html"><img src="../../img/seta_esquerda.jpg" style="width: 50px;"></a> &nbsp &nbsp &nbsp
-        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+            <h1 id="title" style="color: white;">CARTAS PARA JULIETA</h1>
 
-        <label>Cartas para Julieta</label>
-        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+            <div class="botoes">
+                <div class="botao-trailer">
+                    <a href="#trailer">
+                        <button class="botao">VER TRAILER</button>
+                    </a>
+                </div>
+                <div class="botao-locacao">
+                    <a href="../locacao.html">
+                        <button class="botao">LOCAÇÃO</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        <a href=""><img src="../../img/seta_direita.jpg" style="width: 50px;"></a>
-    </fieldset>
-
-
-    <!-- CORPO -->
-    <fieldset style="width: 500px;">
-        <iframe width="500" height="315" src="https://www.youtube.com/embed/8j0qMY-LeKM" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe><br>
-
+<!-- CORPO -->
+<div class="informacoes">
+    <div class="text-2">
         <h4>Diretor: Gary Winick</h4>
         <h4>Ano de lançamento: 2010</h4>
         <h4>Atores principais: </h4>
@@ -42,9 +57,39 @@
             <li>Marcia DeBonis</li>
             <li>Gael García Bernal</li>
         </ul>
+    </div>
 
-        <h4>Descrição do filme:</h4>
-        <p>
+    <div id="atores">
+        <img src="../imagens/cartas-ator1.png">
+        <img src="../imagens/cartas-ator2.png">
+        <img src="../imagens/cartas-ator3.png">
+    </div>
+</div>
+
+<div id="trailer">
+    <iframe width="700" height="400" src="https://www.youtube.com/embed/8j0qMY-LeKM" title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
+</div>
+
+<div class="botoes-de-baixo">
+    <div class="botão-detalhes">
+        <a href="https://www.papodecinema.com.br/filmes/cartas-para-julieta/"
+            target="_blank">
+            <button class="botao">MAIS DETALHES</button>
+        </a>
+    </div>
+    <div class="locacao">
+        <a href="../locacao.html" target="_blank">
+            <button class="botao">LOCAÇÃO</button>
+        </a>
+    </div>
+</div>
+<div id="descricao">
+    <div class="text">
+        <h3>DESCRIÇÃO</h3>
+        <p class="text-1">
             Em Cartas para Julieta, Sophie (Amanda Seyfried) é uma aspirante a escritora que viaja para a Itália ao lado
             do noivo Victor (Gael García Bernal), que sonha em ter seu próprio restaurante. Em Verona, onde se passou a
             história de Romeu e Julieta, local perfeito para uma lua de mel antecipada, Sophie acaba percebendo que seu
@@ -53,13 +98,23 @@
             a remetente Claire Smith (Vanessa Redgrave) ouve o conselho dado na resposta e vai procurar Lorenzo, por
             quem se apaixonou na juventude. Mas existem muitos italianos com o mesmo nome e Sophie demonstra interesse
             em ajudá-la na tarefa, desagradando o neto Charlie (Christopher Egan), que já tinha reprovado essa louca
-            aventura da avó viúva.
-        </p>
+            aventura da avó viúva.</p>
+    </div>
+</div>
+<!-- FOOTER -->
+<footer>
+    <div class="conteudo-footer">
+        <p> Contacte a pessoa desenvolvedora </p>
+        <div class="contato">
+            <ul>
+                <li><a href="https://www.linkedin.com/in/jamilly-anunciada/" target="_blank">LinkedIn |</a></li>
+                <li><a href="https://github.com/darllen" target="_blank">GitHub |</a></li>
+                <li><a href="mailto:jamillymilly10@hotmail.com" target="_blank">E-mail</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
 
-        <a href="https://www.papodecinema.com.br/filmes/cartas-para-julieta/" target="_blank">Mais detalhes</a>
-        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-        <a href="../../locacao.html" target="_blank">Locação</a>
-    </fieldset>
 
 </body>
 

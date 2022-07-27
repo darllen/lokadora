@@ -4,65 +4,119 @@
 <head>
     <meta charset="UTF-8">
     <title>Titanic</title>
+    <link rel="stylesheet" type="text/css" href="../../css/filme.css" />
 </head>
 
 <body>
-    <!-- CABEÇALHO -->
-    <fieldset style="width: 500px; background-color: #EEDDFE;">
-        <a href="../../login.html">Sair</a> <br>
-        <a href="../../index.html"><img src="../../img/logo.png" style="width: 200px;"></a>
-    </fieldset>
+    <!-- MENU DE NAVEGAÇÃO -->
+    <div class='navegacao' id="titanic">
+        <div class='baixo'></div>
+        <div class='cima'>
+            <nav>
+                <a id="logo" href="../../login.html">
+                    <img src="../imagens/logo.png">
+                </a>
+                <div id="nav-opcoes">
+                    <a href="../acervo.html#drama">
+                        <img src="../imagens/seta-esquerda.png">
+                    </a>
+                    <a href="">
+                        <img src="../imagens/seta-direita.png">
+                    </a>
+                    <a href="../../login.html">
+                        <img src="../imagens/sair.png">
+                    </a>
+                </div>
+            </nav>
 
-    <!-- NAVEGAÇÃO -->
-    <fieldset style="width: 500px;">
-        <a href="../acervo.html"><img src="../../img/seta_esquerda.jpg" style="width: 50px;"></a> &nbsp &nbsp &nbsp
-        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-        &nbsp &nbsp &nbsp &nbsp &nbsp
+            <h1 id="title" style="color: white;">TITANIC</h1>
 
-        <label>Titanic</label>
-        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-
-        <a href=""><img src="../../img/seta_direita.jpg" style="width: 50px;"></a>
-    </fieldset>
-
-
+            <div class="botoes">
+                <div class="botao-trailer">
+                    <a href="#trailer">
+                        <button class="botao">VER TRAILER</button>
+                    </a>
+                </div>
+                <div class="botao-locacao">
+                    <a href="../locacao.html">
+                        <button class="botao">LOCAÇÃO</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- CORPO -->
-    <fieldset style="width: 500px;">
-        <iframe width="500" height="315" src="https://www.youtube.com/embed/taaSrtlL5g4" title="YouTube video player"
+    <div class="informacoes">
+        <div class="text-2">
+            <h4>Diretor: James Cameron</h4>
+            <h4>Ano de relançamento: 2012</h4>
+            <h4>Atores principais: </h4>
+            <ul>
+                <li>Leonardo DiCaprio</li>
+                <li>Kate Winslet</li>
+                <li>Billy Zane</li>
+            </ul>
+        </div>
+
+        <div id="atores">
+            <img src="../imagens/titanic-ator1.png">
+            <img src="../imagens/titanic-ator2.png">
+            <img src="../imagens/titanic-ator3.png">
+        </div>
+    </div>
+    <div id="trailer">
+        <iframe width="700" height="400" src="https://www.youtube.com/embed/taaSrtlL5g4" title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe><br>
-
-        <h4>Diretor: James Cameron</h4>
-        <h4>Ano de relançamento: 2012</h4>
-        <h4>Atores principais: </h4>
-        <ul>
-            <li>Leonardo DiCaprio</li>
-            <li>Kate Winslet</li>
-            <li>Billy Zane</li>
-        </ul>
-
-        <h4>Descrição do filme:</h4>
-        <p>
-            Jack Dawson (Leonardo DiCaprio) é um jovem aventureiro que, na mesa de jogo, ganha uma passagem para a
-            primeira viagem do transatlântico Titanic. Trata-se de um luxuoso e imponente navio, anunciado na época como
-            inafundável, que parte para os Estados Unidos. Nele está também Rose DeWitt Bukater (Kate Winslet), a jovem
-            noiva de Caledon Hockley (Billy Zane). Rose está descontente com sua vida, já que sente-se sufocada pelos
-            costumes da elite e não ama Caledon. Entretanto, ela precisa se casar com ele para manter o bom nome da
-            família, que está falida. Um dia, desesperada, Rose ameaça se atirar do Titanic, mas Jack consegue demovê-la
-            da ideia. Pelo ato ele é convidado a jantar na primeira classe, onde começa a se tornar mais próximo de
-            Rose. Logo eles se apaixonam, despertando a fúria de Caledon. A situação fica ainda mais complicada quando o
-            Titanic se choca com um iceberg, provocando algo que ninguém imaginava ser possível: o naufrágio do navio.
-        </p>
-
-        <a href="https://www.papodecinema.com.br/filmes/titanic/fotos/" target="_blank">Mais detalhes</a>
-        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-        <a href="../../locacao.html" target="_blank">Locação</a>
-
-    </fieldset>
+            allowfullscreen></iframe>
+    </div>
+    <div class="botoes-de-baixo">
+        <div class="botão-detalhes">
+            <a href="https://www.papodecinema.com.br/filmes/titanic/fotos/" target="_blank">
+                <button class="botao">MAIS DETALHES</button>
+            </a>
+        </div>
+        <div class="locacao">
+            <a href="../locacao.html" target="_blank">
+                <button class="botao">LOCAÇÃO</button>
+            </a>
+        </div>
+    </div>
+    <div id="descricao">
+        <div class="text">
+            <h3>DESCRIÇÃO</h3>
+            <p class="text-1">
+                Jack Dawson (Leonardo DiCaprio) é um jovem aventureiro que, na mesa de jogo, ganha uma passagem para a
+                primeira viagem do transatlântico Titanic. Trata-se de um luxuoso e imponente navio, anunciado na época
+                como
+                inafundável, que parte para os Estados Unidos. Nele está também Rose DeWitt Bukater (Kate Winslet), a
+                jovem
+                noiva de Caledon Hockley (Billy Zane). Rose está descontente com sua vida, já que sente-se sufocada
+                pelos
+                costumes da elite e não ama Caledon. Entretanto, ela precisa se casar com ele para manter o bom nome da
+                família, que está falida. Um dia, desesperada, Rose ameaça se atirar do Titanic, mas Jack consegue
+                demovê-la
+                da ideia. Pelo ato ele é convidado a jantar na primeira classe, onde começa a se tornar mais próximo de
+                Rose. Logo eles se apaixonam, despertando a fúria de Caledon. A situação fica ainda mais complicada
+                quando o
+                Titanic se choca com um iceberg, provocando algo que ninguém imaginava ser possível: o naufrágio do
+                navio.
+            </p>
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <footer>
+        <div class="conteudo-footer">
+            <p> Contacte a pessoa desenvolvedora </p>
+            <div class="contato">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/jamilly-anunciada/" target="_blank">LinkedIn |</a></li>
+                    <li><a href="https://github.com/darllen" target="_blank">GitHub |</a></li>
+                    <li><a href="mailto:jamillymilly10@hotmail.com" target="_blank">E-mail</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
 </body>
 

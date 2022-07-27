@@ -4,59 +4,119 @@
 <head>
     <meta charset="UTF-8">
     <title>O Menino do Pijama Listrado</title>
+    <link rel="stylesheet" type="text/css" href="../../css/filme.css" />
 </head>
 
 <body>
-    <!-- CABEÇALHO -->
-    <fieldset style="width: 500px; background-color: #EEDDFE;">
-        <a href="../../login.html">Sair</a> <br>
-        <a href="../../index.html"><img src="../../img/logo.png" style="width: 200px;"></a>
-    </fieldset>
+    <!-- MENU DE NAVEGAÇÃO -->
+    <div class='navegacao' id="omenino">
+        <div class='baixo'></div>
+        <div class='cima'>
+            <nav>
+                <a id="logo" href="../../login.html">
+                    <img src="../imagens/logo.png">
+                </a>
+                <div id="nav-opcoes">
+                    <a href="../acervo.html#drama">
+                        <img src="../imagens/seta-esquerda.png">
+                    </a>
+                    <a href="">
+                        <img src="../imagens/seta-direita.png">
+                    </a>
+                    <a href="../../login.html">
+                        <img src="../imagens/sair.png">
+                    </a>
+                </div>
+            </nav>
 
-    <!-- NAVEGAÇÃO -->
-    <fieldset style="width: 500px;">
-        <a href="../acervo.html"><img src="../../img/seta_esquerda.jpg" style="width: 50px;"></a> &nbsp &nbsp &nbsp
+            <h1 id="title" style="color: white;">O MENINO DO PIJAMA LISTRADO</h1>
 
-        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-        <label>O Menino do Pijama Listrado</label>
-        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-
-        <a href=""><img src="../../img/seta_direita.jpg" style="width: 50px;"></a>
-    </fieldset>
-
+            <div class="botoes">
+                <div class="botao-trailer">
+                    <a href="#trailer">
+                        <button class="botao">VER TRAILER</button>
+                    </a>
+                </div>
+                <div class="botao-locacao">
+                    <a href="../locacao.html">
+                        <button class="botao">LOCAÇÃO</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- CORPO -->
-    <fieldset style="width: 500px;">
-        <iframe width="500" height="315" src="https://www.youtube.com/embed/uZD-ySKl91A" title="YouTube video player"
+    <div class="informacoes">
+        <div class="text-2">
+            <h4>Diretor: Mark Herman</h4>
+            <h4>Ano de lançamento: 2008</h4>
+            <h4>Atores principais: </h4>
+            <ul>
+                <li>Asa Butterfield</li>
+                <li>Vera Farmiga</li>
+                <li>David Thewlis</li>
+            </ul>
+        </div>
+
+        <div id="atores">
+            <img src="../imagens/omenino-ator1.png">
+            <img src="../imagens/omenino-ator2.png">
+            <img src="../imagens/omenino-ator3.png">
+        </div>
+    </div>
+
+    <div id="trailer">
+        <iframe width="700" height="400" src="https://www.youtube.com/embed/uZD-ySKl91A" title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe><br>
+            allowfullscreen></iframe>
+    </div>
 
-        <h4>Diretor: Mark Herman</h4>
-        <h4>Ano de lançamento: 2008</h4>
-        <h4>Atores principais: </h4>
-        <ul>
-            <li>Asa Butterfield</li>
-            <li>Vera Farmiga</li>
-            <li>David Thewlis</li>
-        </ul>
-
-        <h4>Descrição do filme:</h4>
-        <p>
-            Alemanha, Segunda Guerra Mundial. O menino Bruno (Asa Butterfield), de 8 anos, é filho de um oficial nazista
-            (David Tewlis) que assume um cargo importante em um campo de concentração. Sem saber realmente o que seu pai
-            faz, ele deixa Berlim e se muda com ele e a mãe (Vera Farmiga) para uma área isolada, onde não há muito o
-            que fazer para uma criança com a idade dele. Os problemas começam quando ele decide explorar o local e acaba
-            conhecendo Shmuel (Jack Scanlon), um garoto de idade parecida, que vive usando um pijama listrado e está
-            sempre do outro lado de uma cerca eletrificada. A amizade cresce entre os dois e Bruno passa, cada vez mais,
-            a visitá-lo, tornando essa relação mais perigosa do que eles imaginam.
-        </p>
-
-        <a href="https://www.papodecinema.com.br/filmes/o-menino-do-pijama-listrado/" target="_blank">Mais detalhes</a>
-        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-        <a href="../../locacao.html" target="_blank">Locação</a>
-
-    </fieldset>
+    <div class="botoes-de-baixo">
+        <div class="botão-detalhes">
+            <a href="https://www.papodecinema.com.br/filmes/o-menino-do-pijama-listrado/" target="_blank">
+                <button class="botao">MAIS DETALHES</button>
+            </a>
+        </div>
+        <div class="locacao">
+            <a href="../locacao.html" target="_blank">
+                <button class="botao">LOCAÇÃO</button>
+            </a>
+        </div>
+    </div>
+    <div id="descricao">
+        <div class="text">
+            <h3>DESCRIÇÃO</h3>
+            <p class="text-1">
+                Alemanha, Segunda Guerra Mundial. O menino Bruno (Asa Butterfield), de 8 anos, é filho de um oficial
+                nazista
+                (David Tewlis) que assume um cargo importante em um campo de concentração. Sem saber realmente o que seu
+                pai
+                faz, ele deixa Berlim e se muda com ele e a mãe (Vera Farmiga) para uma área isolada, onde não há muito
+                o
+                que fazer para uma criança com a idade dele. Os problemas começam quando ele decide explorar o local e
+                acaba
+                conhecendo Shmuel (Jack Scanlon), um garoto de idade parecida, que vive usando um pijama listrado e está
+                sempre do outro lado de uma cerca eletrificada. A amizade cresce entre os dois e Bruno passa, cada vez
+                mais,
+                a visitá-lo, tornando essa relação mais perigosa do que eles imaginam.
+            </p>
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <footer>
+        <div class="conteudo-footer">
+            <p> Contacte a pessoa desenvolvedora </p>
+            <div class="contato">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/jamilly-anunciada/" target="_blank">LinkedIn |</a></li>
+                    <li><a href="https://github.com/darllen" target="_blank">GitHub |</a></li>
+                    <li><a href="mailto:jamillymilly10@hotmail.com" target="_blank">E-mail</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
 </body>
 

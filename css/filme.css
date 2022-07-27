@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
 
-* {
-    font-family: Courier, monospace;
+@font-face {
+    font-family: "Emphasis";
+    src: url("../fontes/Emphasis.ttf");
 }
 
 html {
@@ -23,6 +24,13 @@ a {
     text-decoration: none;
 }
 
+span {
+    color: #139FB6;
+    font-family: 'Emphasis';
+    font-size: 1.2em;
+    letter-spacing: 1px;
+}
+
 /* FOOTER */
 footer {
     background-color: #D1D1D1;
@@ -31,6 +39,7 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .conteudo-footer {
@@ -91,30 +100,76 @@ nav img {
 }
 
 #matrix {
-    background-image: url(../img/poster-matrix.jpg);
+    background-image: url(../acervo/imagens/poster-matrix.jpg);
 }
 
 #cidadeperdida {
-    background-image: url(../img/poster-cidadeperdida.webp);
+    background-image: url(../acervo/imagens/poster-cidadeperdida.webp);
 }
 
 #mrbean {
-    background-image: url(../img/poster-mrbean.jpg);
-    background-size:100%;
+    background-image: url(../acervo/imagens/poster-mrbean.jpg);
+    background-size: 100%;
 }
 
 #eternos {
-    background-image: url(../img/poster-eternos.jpeg);
-    background-size:100%;
+    background-image: url(../acervo/imagens/poster-eternos.jpeg);
+    background-size: 100%;
 }
+
 #jumanji {
-    background-image: url(../img/poster-jumanji.jpg);
-    background-size:100%;
+    background-image: url(../acervo/imagens/poster-jumanji.jpg);
+    background-size: 100%;
 }
 
 #projetoadam {
-    background-image: url(../img/poster-projetoadam.webp);
-    background-size:100%;
+    background-image: url(../acervo/imagens/poster-projetoadam.webp);
+    background-size: 100%;
+}
+
+#asbranquelas {
+    background-image: url(../acervo/imagens/poster-asbranquelasjpg);
+    background-size: 100%;
+}
+
+#curtindo {
+    background-image: url(../acervo/imagens/poster-curtindo.jpg);
+    background-size: 100%;
+}
+
+#freeguy {
+    background-image: url(../acervo/imagens/poster-freeguy.jpeg);
+    background-size: 100%;
+}
+
+#amenina {
+    background-image: url(../acervo/imagens/poster-amenina.webp);
+    background-size: 100%;
+}
+
+#omenino {
+    background-image: url(../acervo/imagens/poster-omenino.jpg);
+    background-size: 100%;
+}
+
+#titanic {
+    background-image: url(../acervo/imagens/poster-titanic.jpg);
+    background-size: 100%;
+}
+
+#cartas {
+    background-image: url(../acervo/imagens/poster-cartas.jpg);
+    background-size: 100%;
+}
+
+#prideandprejudice {
+    background-image: url(../acervo/imagens/poster-prideandprejudice.webp);
+    background-size: 100%;
+}
+
+#umamor {
+    background-image: url(../acervo/imagens/poster-umamor.jpg);
+    background-size: 100%;
 }
 
 .baixo {
@@ -134,7 +189,9 @@ nav img {
 #title {
     text-align: center;
     margin-top: 10%;
-    font-size: 50px;
+    font-size: 3em;
+    font-family: 'Lato';
+    letter-spacing: 2px;
 }
 
 /* BOTOES */
@@ -155,18 +212,20 @@ nav img {
 }
 
 .botao {
-    width: 150px;
+    width: 130px;
+    height: 35px;
     color: #FFF;
     background-color: #139FB6;
-    border: 2px solid transparent;
-    padding: 10px;
-    font-size: 15px;
+    border: none;
+    text-align: center;
+    font-size: .8em;
+    margin-top: 4%;
     font-weight: bold;
 }
 
 .botao:hover {
     color: #139FB6;
-    background-color: #D1D1D1;
+    background-color: #F7F7F7;
 }
 
 /* DESCRICAO */
@@ -178,7 +237,6 @@ nav img {
 
 .text {
     width: 85%;
-    color: #000000;
     background-color: #FFFFFF;
     padding: 4%;
     justify-content: center;
@@ -188,13 +246,17 @@ nav img {
 .text h3 {
     color: #139FB6;
     margin-left: 5%;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Emphasis';
+    font-size: 2em;
+    letter-spacing: 2px;
 }
 
 .text-1 {
+    color: black;
     width: 90%;
     margin-left: 5%;
     font-size: 0.9em;
+    font-family: sans-serif;
     text-align: center;
 }
 
@@ -205,6 +267,7 @@ nav img {
     margin-left: 12%;
     display: flex;
     position: relative;
+    font-family: sans-serif;
 }
 
 #atores {
@@ -217,14 +280,14 @@ nav img {
     margin: 15px;
 }
 
-.trailer {
+#trailer {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 10%;
 }
 
-.trailer iframe {
+#trailer iframe {
     border: 3px solid #139FB6;
 }
 

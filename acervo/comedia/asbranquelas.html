@@ -4,65 +4,122 @@
 <head>
     <meta charset="UTF-8">
     <title>As Branquelas</title>
+    <link rel="stylesheet" type="text/css" href="../../css/filme.css" />
 </head>
 
 <body>
-    <!-- CABEÇALHO -->
-    <fieldset style="width: 500px; background-color: #EEDDFE;">
-        <a href="../../login.html">Sair</a> <br>
-        <a href="../../index.html"><img src="../../img/logo.png" style="width: 200px;"></a>
-    </fieldset>
+    <!-- MENU DE NAVEGAÇÃO -->
+    <div class='navegacao' id="asbranquelas">
+        <div class='baixo'></div>
+        <div class='cima'>
+            <nav>
+                <a id="logo" href="../../login.html">
+                    <img src="../imagens/logo.png">
+                </a>
+                <div id="nav-opcoes">
+                    <a href="../acervo.html#comedia">
+                        <img src="../imagens/seta-esquerda.png">
+                    </a>
+                    <a href="">
+                        <img src="../imagens/seta-direita.png">
+                    </a>
+                    <a href="../../login.html">
+                        <img src="../imagens/sair.png">
+                    </a>
+                </div>
+            </nav>
 
-    <!-- NAVEGAÇÃO -->
-    <fieldset style="width: 500px;">
-        <a href="../acervo.html"><img src="../../img/seta_esquerda.jpg" style="width: 50px;"></a> &nbsp &nbsp &nbsp
-        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+            <h1 id="title" style="color: white;">AS BRANQUELAS</h1>
 
-        <label>As Branquelas</label>
-        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-
-        <a href=""><img src="../../img/seta_direita.jpg" style="width: 50px;"></a>
-    </fieldset>
-
+            <div class="botoes">
+                <div class="botao-trailer">
+                    <a href="#trailer">
+                        <button class="botao">VER TRAILER</button>
+                    </a>
+                </div>
+                <div class="botao-locacao">
+                    <a href="../locacao.html">
+                        <button class="botao">LOCAÇÃO</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- CORPO -->
-    <fieldset style="width: 500px;">
-        <iframe width="500" height="315" src="https://www.youtube.com/embed/aeVkbNka9HM" title="YouTube video player"
+    <div class="informacoes">
+        <div class="text-2">
+            <h4>Diretor: Keenen Ivory Wayans</h4>
+            <h4>Ano de lançamento: 2004</h4>
+            <h4>Atores principais: </h4>
+            <ul>
+                <li>Shawn Wayans</li>
+                <li>Marlon Wayans</li>
+                <li>Terry Crews</li>
+            </ul>
+        </div>
+
+        <div id="atores">
+            <img src="../imagens/asbranquelas-ator1.png">
+            <img src="../imagens/asbranquelas-ator2.png">
+            <img src="../imagens/asbranquelas-ator3.png">
+        </div>
+    </div>
+
+    <div id="trailer">
+        <iframe width="700" height="400" src="https://www.youtube.com/embed/aeVkbNka9HM" title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe><br>
+            allowfullscreen></iframe>
+    </div>
 
-        <h4>Diretor: Keenen Ivory Wayans</h4>
-        <h4>Ano de lançamento: 2004</h4>
-        <h4>Atores principais: </h4>
-        <ul>
-            <li>Shawn Wayans</li>
-            <li>Marlon Wayans</li>
-            <li>Terry Crews</li>
-        </ul>
-
-        <h4>Descrição do filme:</h4>
-        <p>
-            Em As Branquelas, os irmãos Marcus (Marlon Wayans) e Kevin Copeland (Shawn Wayans) são detetives do FBI que
-            estão com problemas no trabalho. A última investigação da dupla foi um grande fracasso e eles estão sob a
-            ameaça de serem demitidos. Quando um plano para sequestrar as mimadas irmãs Brittany (Maitland Ward) e
-            Tiffany Wilson (Anne Dudek) é descoberto, o caso é entregue aos principais rivais dos irmãos Copeland, os
-            agentes Vincent Gomez (Eddie Velez) e Jack Harper (Lochlyn Munro). Para aumentar ainda mais a humilhação da
-            dupla, eles são escalados para escoltar as jovens mimadas do aeroporto até o local de um evento pelo qual
-            elas esperaram por meses. Porém no trajeto um acidente de carro provoca um verdadeiro desastre: enquanto uma
-            das irmãs arranha o nariz, a outra corta o lábio. Desesperadas, elas se recusam a ir ao evento. É
-            quando,para salvar o emprego, Marcus e Kevin decidem por assumir as identidades das irmãs.
-
-        </p>
-
-        <a href="https://www.papodecinema.com.br/filmes/as-branquelas/" target="_blank">Mais detalhes</a>
-        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-        <a href="../../locacao.html" target="_blank">Locação</a>
-
-    </fieldset>
-
+    <div class="botoes-de-baixo">
+        <div class="botão-detalhes">
+            <a href="https://www.papodecinema.com.br/filmes/as-branquelas/" target="_blank">
+                <button class="botao">MAIS DETALHES</button>
+            </a>
+        </div>
+        <div class="locacao">
+            <a href="../locacao.html" target="_blank">
+                <button class="botao">LOCAÇÃO</button>
+            </a>
+        </div>
+    </div>
+    <div id="descricao">
+        <div class="text">
+            <h3>DESCRIÇÃO</h3>
+            <p class="text-1">
+                Em As Branquelas, os irmãos Marcus (Marlon Wayans) e Kevin Copeland (Shawn Wayans) são detetives do FBI
+                que
+                estão com problemas no trabalho. A última investigação da dupla foi um grande fracasso e eles estão sob
+                a
+                ameaça de serem demitidos. Quando um plano para sequestrar as mimadas irmãs Brittany (Maitland Ward) e
+                Tiffany Wilson (Anne Dudek) é descoberto, o caso é entregue aos principais rivais dos irmãos Copeland,
+                os
+                agentes Vincent Gomez (Eddie Velez) e Jack Harper (Lochlyn Munro). Para aumentar ainda mais a humilhação
+                da
+                dupla, eles são escalados para escoltar as jovens mimadas do aeroporto até o local de um evento pelo
+                qual
+                elas esperaram por meses. Porém no trajeto um acidente de carro provoca um verdadeiro desastre: enquanto
+                uma
+                das irmãs arranha o nariz, a outra corta o lábio. Desesperadas, elas se recusam a ir ao evento. É
+                quando,para salvar o emprego, Marcus e Kevin decidem por assumir as identidades das irmãs.
+            </p>
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <footer>
+        <div class="conteudo-footer">
+            <p> Contacte a pessoa desenvolvedora </p>
+            <div class="contato">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/jamilly-anunciada/" target="_blank">LinkedIn |</a></li>
+                    <li><a href="https://github.com/darllen" target="_blank">GitHub |</a></li>
+                    <li><a href="mailto:jamillymilly10@hotmail.com" target="_blank">E-mail</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
