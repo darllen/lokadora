@@ -1,12 +1,14 @@
-* {
-    font-family: Courier, monospace;
+@font-face {
+    font-family: "Emphasis";
+    src: url("../fontes/Emphasis.ttf");
 }
 
 html {
     width: 100%;
     height: 100%;
+    font-family: sans-serif;
 }
-
+ 
 body {
     background-color: #1D2024;
     margin: 0;
@@ -55,6 +57,7 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 
@@ -94,7 +97,7 @@ p {
 #filho1 {
     width: 300px;
     height: 600px;
-    color: #F7F7F7;
+    
     background: rgba(255, 255, 255, 0.1);
     border-radius: 5px 0px 0px 5px;
     position: relative;
@@ -102,7 +105,15 @@ p {
 }
 
 .filho1-conteudo {
+    color: #139FB6;
     padding-top: 70%;
+    font-family: 'Emphasis';
+    letter-spacing: 1.5px;
+}
+
+.filho1-conteudo p{
+    color: #F7F7F7;
+    font-size: 1em;
 }
 
 #filho2 {
@@ -111,6 +122,7 @@ p {
     color: #13414C;
     background-color: #F7F7F7;
     border-radius: 0px 5px 5px 0px;
+    font-size: .9em;
 }
 
 #filho2 #topo-b {
@@ -118,7 +130,11 @@ p {
     margin-top: 7%;
     margin-left: 10%;
 }
-
+#topo-b h2{
+    font-family: "Emphasis";
+    letter-spacing: 2.5px;
+    font-size: 2em;
+}
 .colocar-ao-lado {
     display: flex;
     justify-content: center;
@@ -214,6 +230,7 @@ textarea {
     border-radius: 3px;
     box-sizing: border-box;
     box-shadow: 0 0 3px rgba(83, 27, 27, 0.3);
+    font-family: sans-serif;
 }
 
 textarea:focus {
@@ -228,18 +245,19 @@ textarea:focus {
 #botao-login {
     width: 35%;
     height: 35px;
-    color: #FFF;
+    color: #FFFF;
     background-color: transparent;
-    border: 1px solid #D1D1D1;
+    border: 1px solid #139FB6;
     padding: 10px;
     font-size: 15px;
-    margin-top: 4%;
+    margin-top: 3%;
     font-weight: bold;
 }
 
 #botao-login:hover {
-    border: 1px solid #139FB6;
+    
     color: #FFF;
+    background-color: #139FB6;
 }
 
 #botao-cadastrar {
@@ -249,7 +267,7 @@ textarea:focus {
     background-color: #139FB6;
     border: 1px solid white;
     text-align: center;
-    font-size: 15px;
+    font-size: .9em;
     margin-top: 4%;
     font-weight: bold;
 }
@@ -266,7 +284,7 @@ textarea:focus {
     background-color: transparent;
     border: 1px solid #139FB6;
     text-align: center;
-    font-size: 15px;
+    font-size: .9em;
     margin-top: 4%;
     font-weight: bold;
 }
