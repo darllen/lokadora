@@ -7,7 +7,7 @@ html {
     height: 100%;
 }
 
-body { 
+body {
     background-color: #1D2024;
     margin: 0;
     /*para o footer ficar lá em baixo-->*/
@@ -82,19 +82,33 @@ p {
 }
 
 /* BODY */
+.body {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
 #options {
+    width: 900px;
+    height: 250px;
+    display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
 }
 
 #options a {
-    padding: 2.5%;
     position: relative;
+    padding-left: 2.5%;
 }
 
 #options a img {
     width: 9rem;
+}
+
+#options a img:hover {
+    width: 10rem;
 }
 
 h3 {
@@ -107,7 +121,7 @@ h3 {
     text-align: center;
 }
 
-#avatar{
+#avatar {
     width: 200px;
 }
 
@@ -120,15 +134,16 @@ h3 {
     list-style-type: none;
     padding-right: 17px;
 }
-.sobre{
+
+.sobre {
     margin-left: 10%;
 }
-.sobre h4{
+
+.sobre h4 {
     color: #139FB6;
-    
+
 }
-.sobre ul li{
+
+.sobre ul li {
     color: #F3EFF9;
 }
-
-
