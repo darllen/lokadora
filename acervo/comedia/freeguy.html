@@ -4,65 +4,126 @@
 <head>
     <meta charset="UTF-8">
     <title>Free Guy - Assumindo o Controle</title>
+    <link rel="stylesheet" type="text/css" href="../../css/filme.css" />
 </head>
 
 <body>
-    <!-- CABEÇALHO -->
-    <fieldset style="width: 500px; background-color: #EEDDFE;">
-        <a href="../../login.html">Sair</a> <br>
-        <a href="../../index.html"><img src="../../img/logo.png" style="width: 200px;"></a>
-    </fieldset>
+    <!-- MENU DE NAVEGAÇÃO -->
+    <div class='navegacao' id="freeguy">
+        <div class='baixo'></div>
+        <div class='cima'>
+            <nav>
+                <a id="logo" href="../../login.html">
+                    <img src="../imagens/logo.png">
+                </a>
+                <div id="nav-opcoes">
+                    <a href="../acervo.html#comedia">
+                        <img src="../imagens/seta-esquerda.png">
+                    </a>
+                    <a href="">
+                        <img src="../imagens/seta-direita.png">
+                    </a>
+                    <a href="../../login.html">
+                        <img src="../imagens/sair.png">
+                    </a>
+                </div>
+            </nav>
 
-    <!-- NAVEGAÇÃO -->
-    <fieldset style="width: 500px;">
-        <a href="../acervo.html"><img src="../../img/seta_esquerda.jpg" style="width: 50px;"></a> &nbsp &nbsp &nbsp
-        &nbsp &nbsp &nbsp &nbsp
-        &nbsp &nbsp &nbsp &nbsp
-        <label>Free Guy - Assumindo o Controle</label>
-        &nbsp &nbsp &nbsp &nbsp &nbsp
-        &nbsp &nbsp &nbsp &nbsp &nbsp
-        <a href=""><img src="../../img/seta_direita.jpg" style="width: 50px;"></a>
-    </fieldset>
+            <h1 id="title" style="color: white;">FREE GUY - ASSUMUNDO O CONTROLE</h1>
 
+            <div class="botoes">
+                <div class="botao-trailer">
+                    <a href="#trailer">
+                        <button class="botao">VER TRAILER</button>
+                    </a>
+                </div>
+                <div class="botao-locacao">
+                    <a href="../locacao.html">
+                        <button class="botao">LOCAÇÃO</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- CORPO -->
-    <fieldset style="width: 500px;">
-        <iframe width="500" height="315" src="https://www.youtube.com/embed/WdCy6SOPMRE" title="YouTube video player"
+    <div class="informacoes">
+        <div class="text-2">
+            <h4>Diretor: Shawn Levy</h4>
+            <h4>Ano de lançamento: 2022</h4>
+            <h4>Atores principais: </h4>
+            <ul>
+                <li>Ryan Reynolds</li>
+                <li>Jodie Comer</li>
+                <li>Lil Rel Howery</li>
+                <li>Dwayne Johnson</li>
+            </ul>
+        </div>
+
+        <div id="atores">
+            <img src="../imagens/freeguy-ator1.png">
+            <img src="../imagens/freeguy-ator2.png">
+            <img src="../imagens/freeguy-ator3.png">
+        </div>
+    </div>
+
+    <div id="trailer">
+        <iframe width="700" height="400" src="https://www.youtube.com/embed/WdCy6SOPMRE" title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe><br>
+            allowfullscreen></iframe>
+    </div>
 
-        <h4>Diretor: Shawn Levy</h4>
-        <h4>Ano de lançamento: 2022</h4>
-        <h4>Atores principais: </h4>
-        <ul>
-            <li>Ryan Reynolds</li>
-            <li>Jodie Comer</li>
-            <li>Lil Rel Howery</li>
-            <li>Dwayne Johnson</li>
-        </ul>
+    <div class="botoes-de-baixo">
+        <div class="botão-detalhes">
+            <a href="https://www.papodecinema.com.br/filmes/free-guy-assumindo-o-controle/amp/" target="_blank">
+                <button class="botao">MAIS DETALHES</button>
+            </a>
+        </div>
+        <div class="locacao">
+            <a href="../locacao.html" target="_blank">
+                <button class="botao">LOCAÇÃO</button>
+            </a>
+        </div>
+    </div>
+    <div id="descricao">
+        <div class="text">
+            <h3>DESCRIÇÃO</h3>
+            <p class="text-1">
+                Em Free Guy - Assumindo o Controle, Guy é um personagem não-jogador (NPC) em Free City, um jogo de RPG
+                online multijogador massivo (MMORPG) desenvolvido pela Soonami Studio. Sem saber que o mundo em que vive
+                é
+                um videogame, ele trabalha como caixa de banco ao lado de seu melhor amigo, o segurança do banco Buddy,
+                em
+                uma entediante rotina. No mundo real, Millie Rusk está tentando encontrar evidências de que o
+                código-fonte
+                que ela escreveu junto com seu amigo Walter "Keys" McKey foi roubado pelo desenvolvedor chefe de
+                Soonami,
+                Antwan Hovachelik. No jogo, Millie, que joga como Molotov Girl, chama a atenção de Guy cantando sua
+                música
+                favorita, "Fantasy" de Mariah Carey, e ele começa a se desviar de sua programação. Pegando um par de
+                óculos
+                de sol de um jogador roubando o banco, Guy vê Free City através de uma versão única da interface do
+                jogador
+                e surpreendentemente vira um jogador. Agora ele precisa aceitar sua realidade e lidar com o fato de que
+                é o
+                único que pode salvar o mundo.</p>
+        </div>
+    </div>
 
-        <h4>Descrição do filme:</h4>
-        <p>
-            Em Free Guy - Assumindo o Controle, Guy é um personagem não-jogador (NPC) em Free City, um jogo de RPG
-            online multijogador massivo (MMORPG) desenvolvido pela Soonami Studio. Sem saber que o mundo em que vive é
-            um videogame, ele trabalha como caixa de banco ao lado de seu melhor amigo, o segurança do banco Buddy, em
-            uma entediante rotina. No mundo real, Millie Rusk está tentando encontrar evidências de que o código-fonte
-            que ela escreveu junto com seu amigo Walter "Keys" McKey foi roubado pelo desenvolvedor chefe de Soonami,
-            Antwan Hovachelik. No jogo, Millie, que joga como Molotov Girl, chama a atenção de Guy cantando sua música
-            favorita, "Fantasy" de Mariah Carey, e ele começa a se desviar de sua programação. Pegando um par de óculos
-            de sol de um jogador roubando o banco, Guy vê Free City através de uma versão única da interface do jogador
-            e surpreendentemente vira um jogador. Agora ele precisa aceitar sua realidade e lidar com o fato de que é o
-            único que pode salvar o mundo.
-
-
-        </p>
-
-        <a href="https://www.papodecinema.com.br/filmes/free-guy-assumindo-o-controle/amp/" target="_blank">Mais detalhes</a>
-        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-        <a href="../../locacao.html" target="_blank">Locação</a>
-
-    </fieldset>
+    <!-- FOOTER -->
+    <footer>
+        <div class="conteudo-footer">
+            <p> Contacte a pessoa desenvolvedora </p>
+            <div class="contato">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/jamilly-anunciada/" target="_blank">LinkedIn |</a></li>
+                    <li><a href="https://github.com/darllen" target="_blank">GitHub |</a></li>
+                    <li><a href="mailto:jamillymilly10@hotmail.com" target="_blank">E-mail</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
