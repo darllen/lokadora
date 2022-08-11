@@ -14,7 +14,7 @@
             <img src="imagens/logo.png">
         </a>
         <div id="nav-opcoes">
-            <a href="../login.html">
+            <a href="cadastro.html">
                 <img src="imagens/seta-esquerda.png">
             </a>
             <a href="">
@@ -33,54 +33,54 @@
                 <h2>Cadastar novo filme</h2>
             </div><br><br>
             <form action="../index.html">
-                
-                    <div class="colocar-ao-lado">
-                        <div class="esquerda">
-                            <label class="">Título</label><br>
-                            <input class="input" type="text" placeholder=" Título do filme">
-                        </div>
-                        <div class="direita">
-                            <label class="">Gênero</label><br>
-                            <select name="" class="input">
-                                <option value="0">...</option>
-                                <option value="1">Ação</option>
-                                <option value="2">Aventura</option>
-                                <option value="3">Comédia</option>
-                                <option value="4">Drama</option>
-                                <option value="5">Romance</option>
-                            </select>
-                        </div>
+
+                <div class="colocar-ao-lado">
+                    <div class="esquerda">
+                        <label class="">* Título</label><br>
+                        <input class="input" type="text" placeholder=" Título do filme">
                     </div>
-
-                    <div class="elemento">
-                        <label>Prêmios</label><br>
-                        <input type="checkbox" id="fdeouro" value="framboesa de ouro"> Framboesa de Ouro
-                        <input type="checkbox" id="eddie" value="eddie"> Eddie
-                        <input type="checkbox" id="oscar" value="oscar"> Óscar<br>
-                        <input type="checkbox" id="grammy" value="grammy"> Grammy
-                        <input type="checkbox" id="gdeouro" value="globoDeOuro"> Globo de Ouro
-                    </div><br>
-
-                    <div class="elemento">
-                        <label>Descrição</label><br>
-                        <textarea id="txtAnswer" rows="6" cols="53" placeholder="Descrição do filme"></textarea>
-                    </div><br><br>
-
-                    <div class="colocar-ao-lado">
-                        <div class="esquerda" >
-                            <button type="submit" id="botao-cadastrar" onclick="cadastrarFilme()">CADASTRAR</button>
-                            <script>
-                                function cadastrarFilme() {
-                                    alert("Filme cadastrado com sucesso!");
-                                }
-                            </script>
-                        </div>
-                        <div class="direita">
-                            <button type="reset" id="botao-limpar">LIMPAR</button>
-                        </div>
+                    <div class="direita">
+                        <label class="">* Gênero</label><br>
+                        <select name="" class="input">
+                            <option value="0">...</option>
+                            <option value="1">Ação</option>
+                            <option value="2">Aventura</option>
+                            <option value="3">Comédia</option>
+                            <option value="4">Drama</option>
+                            <option value="5">Romance</option>
+                        </select>
                     </div>
+                </div>
 
-                
+                <div class="elemento">
+                    <label>* Prêmios</label><br>
+                    <input type="checkbox" id="fdeouro" value="framboesa de ouro"> Framboesa de Ouro
+                    <input type="checkbox" id="eddie" value="eddie"> Eddie
+                    <input type="checkbox" id="oscar" value="oscar"> Óscar<br>
+                    <input type="checkbox" id="grammy" value="grammy"> Grammy
+                    <input type="checkbox" id="gdeouro" value="globoDeOuro"> Globo de Ouro
+                </div><br>
+
+                <div class="elemento">
+                    <label>Descrição</label><br>
+                    <textarea id="txtAnswer" rows="6" cols="53" placeholder="Descrição do filme"></textarea>
+                </div><br><br>
+
+                <div class="colocar-ao-lado">
+                    <div class="esquerda">
+                        <button type="submit" id="botao-cadastrar" onclick="cadastrarFilme()">CADASTRAR</button>
+                        <script>
+                            function cadastrarFilme() {
+                                alert("Filme cadastrado com sucesso!");
+                            }
+                        </script>
+                    </div>
+                    <div class="direita">
+                        <button type="reset" id="botao-limpar">LIMPAR</button>
+                    </div>
+                </div>
+
+
             </form>
         </div>
     </div>
