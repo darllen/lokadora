@@ -100,10 +100,12 @@ p {
 #options a {
     position: relative;
     padding-left: 2.5%;
+    
 }
 
 #options a img {
     width: 9rem;
+    transition: 0.3s;
 }
 
 #options a img:hover {

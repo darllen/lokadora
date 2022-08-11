@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 
-<body> 
+<body>
     <div class="pai">
         <div id="filho1">
             <img src="img/logo1.png">
@@ -19,28 +19,27 @@
                 <p>Faça o login para experimentar os mais completos conteúdos</p>
             </div>
 
-            <form method="post" class="formulario">
+            <form class="formulario">
                 <div class="entradas">
                     <div class="icone"><img src="img/2.png" alt=""></div>
-                    <input class="input" type="text" placeholder="Usuário" name="usuario" />
+                    <input class="input" id="inputEmail" type="text" placeholder="Usuário" name="usuario" />
                 </div>
 
                 <div class="entradas">
                     <div class="icone"><img src="img/3.png" alt=""></div>
-                    <input class="input" type="password" placeholder="Senha" name="senha" />
+                    <input class="input" id="inputSenha" type="password" placeholder="Senha" name="senha" />
+                </div><br>
+
+
+                <div id="links">
+                    <a href="newUser.html">Novo</a>
+                    <a id="recover" href="recover.html">Esqueceu a senha?</a><br><br>
+                </div>
+
+                <div class="alinhar-botao">
+                    <button id="botao" type="submit" onclick="validarAlgo()">ENTRAR</button>
                 </div>
             </form><br>
-
-            <div id="links">
-                <a href="newUser.html">Novo</a>
-                <a id="recover" href="recover.html">Esqueceu a senha?</a><br><br>
-            </div>
-
-            <div class="alinhar-botao">
-                <a href="index.html">
-                    <button id="botao">ENTRAR</button>
-                </a>
-            </div>
         </div>
     </div>
 
@@ -56,6 +55,34 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        function validarAlgo() {
+
+            //Input
+            var email = document.getElementById("inputEmail")
+            if (email.value == "") {
+                alert("Informe o e-mail")
+
+                email.focus();
+                return false;
+            }
+
+            var senha = document.getElementById("inputSenha")
+            if (senha.value == "") {
+                alert("Informe a senha")
+
+                senha.focus();
+                return false;
+            }
+
+            location.replace("/index.html")
+            window.location.href = "/index.html"
+
+        }
+
+
+    </script>
 </body>
 
 </html>

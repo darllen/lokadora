@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
 @font-face {
     font-family: "Emphasis";
     src: url("../fontes/Emphasis.ttf");
@@ -146,6 +147,23 @@ p {
     font-family: 'Lato', sans-serif;
 }
 
+.div-promocao {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+.div-promocao img {
+    width: 150px;
+
+}
+
+.div-promocao img:hover {
+    width: 160px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
 .botao {
     text-align: end;
     border-radius: 0px 100px 100px 0px;
@@ -157,10 +175,11 @@ p {
     font-family: 'Emphasis';
     letter-spacing: 1.5px;
     color: #FFF;
+    transition: 0.2s;
 }
 
 #primeiro-botao {
-    width: 460px;  
+    width: 460px;
     background-color: #1B4049;
 }
 
@@ -197,7 +216,7 @@ p {
 }
 
 #quarto-botao:hover {
-    width: 360px;  
+    width: 360px;
     cursor: pointer;
 }
 
@@ -252,18 +271,20 @@ p {
     margin: 3%;
     width: 250px;
     height: 360px;
+    transition: 0.3s;
 }
-.filme a img:hover{
-    width: 245px;
-    height: 355px;
-    border: 3px solid #139FB6;
+
+.filme a img:hover {
+    width: 240px;
+    height: 350px;
+
 }
 
 #botao-locacao {
     width: 130px;
     color: #606060;
     background-color: transparent;
-    border: 1px solid #606060    ;
+    border: 1px solid #606060;
     padding: 6px;
     font-size: .7em;
     border-radius: 50px;

@@ -14,7 +14,7 @@
             <img src="imagens/logo.png">
         </a>
         <div id="nav-opcoes">
-            <a href="../login.html">
+            <a href="cadastro.html">
                 <img src="imagens/seta-esquerda.png">
             </a>
             <a href="">
@@ -25,7 +25,7 @@
             </a>
         </div>
     </nav>
-    
+
     <!-- CORPO -->
     <div class="pai">
         <div id="filho2">
@@ -33,56 +33,56 @@
                 <h2>Cadastar novo usuário</h2>
             </div><br>
             <form action="../index.html">
-                
-                    <div class="colocar-ao-lado">
-                        <div class="esquerda">
-                            <label class="">Nome</label><br>
-                            <input class="input" type="text" placeholder=" Digite o nome">
-                        </div>
-                        <div class="direita">
-                            <label class="">E-mail</label><br>
-                            <input class="input" placeholder=" Digite o e-mail">
-                        </div>
+
+                <div class="colocar-ao-lado">
+                    <div class="esquerda">
+                        <label class="">* Nome</label><br>
+                        <input class="input" type="text" placeholder=" Digite o nome">
                     </div>
-    
-                    <div class="elemento">
-                        <label>Sexo</label><br>
-                        <input type="radio" name="radio" value="1" checked="checked" /> Feminino
-                        <input type="radio" name="radio" value="2" /> Masculino
+                    <div class="direita">
+                        <label class="">* E-mail</label><br>
+                        <input class="input" placeholder=" Digite o e-mail">
                     </div>
-    
-                    <div class="elemento">
-                        <label>Preferências</label><br>
-                        <input type="checkbox" id="chkAcao" value="acao"> Ação
-                        <input type="checkbox" id="chkAventura" value="aventura"> Aventura
-                        <input type="checkbox" id="chkComedia" value="comedia"> Comédia <br>
-                        <input type="checkbox" id="chkDrama" value="drama"> Drama
-                        <input type="checkbox" id="chkRomance" value="romance"> Romance
+                </div>
+
+                <div class="elemento">
+                    <label>Sexo</label><br>
+                    <input type="radio" name="radio" value="1" checked="checked" /> Feminino
+                    <input type="radio" name="radio" value="2" /> Masculino
+                </div>
+
+                <div class="elemento">
+                    <label>* Preferências</label><br>
+                    <input type="checkbox" id="chkAcao" value="acao"> Ação
+                    <input type="checkbox" id="chkAventura" value="aventura"> Aventura
+                    <input type="checkbox" id="chkComedia" value="comedia"> Comédia <br>
+                    <input type="checkbox" id="chkDrama" value="drama"> Drama
+                    <input type="checkbox" id="chkRomance" value="romance"> Romance
+                </div>
+
+                <div class="elemento">
+                    <label>Descrição</label><br>
+                    <textarea id="txtAnswer" rows="6" cols="53" placeholder="Conte-me mais"></textarea>
+                </div><br><br>
+
+                <div class="colocar-ao-lado">
+                    <div class="esquerda">
+                        <button type="submit" id="botao-cadastrar" onclick="cadastrarFilme()">CADASTRAR</button>
+                        <script>
+                            function cadastrarFilme() {
+                                alert("Usuário cadastrado com sucesso!");
+                            }
+                        </script>
                     </div>
-    
-                    <div class="elemento">
-                        <label>Descrição</label><br>
-                        <textarea id="txtAnswer" rows="6" cols="53" placeholder="Conte-me mais"></textarea>
-                    </div><br><br>
-    
-                    <div class="colocar-ao-lado">
-                        <div class="esquerda">
-                            <button type="submit" id="botao-cadastrar" onclick="cadastrarFilme()">CADASTRAR</button>
-                            <script>
-                                function cadastrarFilme() {
-                                    alert("Usuário cadastrado com sucesso!");
-                                }
-                            </script>
-                        </div>
-                        <div class="direita">
-                            <button type="reset" id="botao-limpar">LIMPAR</button>
-                        </div>
+                    <div class="direita">
+                        <button type="reset" id="botao-limpar">LIMPAR</button>
                     </div>
-                
+                </div>
+
             </form>
         </div>
     </div>
-    
+
 
     <!-- FOOTER -->
     <footer>
