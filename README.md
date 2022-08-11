@@ -1,5 +1,5 @@
 # lokadora
-https://darllen.github.io/lokadora/index.html
+https://darllen.github.io/lokadora/login.html
 
 Projeto WEB1 IFPE - Site locadora de filmes
 - HTML5
