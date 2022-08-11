@@ -3,6 +3,15 @@
     src: url("../fontes/Emphasis.ttf");
 }
 
+#divResultado {
+    background-color: pink;
+    color: crimson;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 8%;
+
+}
+
 html {
     height: 100%;
     width: 100%;
