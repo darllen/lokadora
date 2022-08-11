@@ -37,7 +37,7 @@
                 </div>
 
                 <div class="alinhar-botao">
-                    <button id="botao" type="submit" onclick="validarAlgo()">ENTRAR</button>
+                    <button id="botao" type="button" onclick="onSubmit()">ENTRAR</button>
                 </div>
             </form><br>
         </div>
@@ -57,7 +57,7 @@
     </footer>
 
     <script>
-        function validarAlgo() {
+        function onSubmit() {
 
             //Input
             var email = document.getElementById("inputEmail")
@@ -76,12 +76,9 @@
                 return false;
             }
 
-            location.replace("/index.html")
             window.location.href = "/index.html"
 
         }
-
-
     </script>
 </body>
 

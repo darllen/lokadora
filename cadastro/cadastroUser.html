@@ -7,6 +7,41 @@
     <link rel="stylesheet" type="text/css" href="../css/form.css" />
 </head>
 
+<script>
+    function onSubmit() {
+        nome = document.getElementById('nome')
+        if (nome.value == '') {
+            alert('Informe o nome')
+            nome.focus()
+            return false
+        }
+
+        email = document.getElementById('email')
+        if (email.value == '') {
+            alert('Informe o email')
+            email.focus()
+            return false
+        }
+
+        var prefs = document.getElementsByName('pref')
+        var prefs_ok = false
+        debugger
+        for (var i = 0; i < prefs.length; i++) {
+            if (prefs[i].checked) {
+                prefs_ok = true
+            }
+        }
+
+        if (!prefs_ok) {
+            alert('Informe uma preferência')
+            return false
+        }
+
+        alert('Usuário cadastrado com sucesso!')
+        window.location.href = "../index.html"
+    }
+</script>
+
 <body>
     <!-- MENU DE NAVEGAÇÃO -->
     <nav>
@@ -32,16 +67,16 @@
             <div id="topo-b">
                 <h2>Cadastar novo usuário</h2>
             </div><br>
-            <form action="../index.html">
+            <form>
 
                 <div class="colocar-ao-lado">
                     <div class="esquerda">
-                        <label class="">* Nome</label><br>
-                        <input class="input" type="text" placeholder=" Digite o nome">
+                        <label class="">Nome<span style="color: red; background-color: #F0F0F0">*</span></label><br>
+                        <input class="input" id="nome" type="text" placeholder=" Digite o nome">
                     </div>
                     <div class="direita">
-                        <label class="">* E-mail</label><br>
-                        <input class="input" placeholder=" Digite o e-mail">
+                        <label class="">E-mail<span style="color: red; background-color: #F0F0F0">*</span></label><br>
+                        <input class="input" id="email" placeholder=" Digite o e-mail">
                     </div>
                 </div>
 
@@ -52,12 +87,12 @@
                 </div>
 
                 <div class="elemento">
-                    <label>* Preferências</label><br>
-                    <input type="checkbox" id="chkAcao" value="acao"> Ação
-                    <input type="checkbox" id="chkAventura" value="aventura"> Aventura
-                    <input type="checkbox" id="chkComedia" value="comedia"> Comédia <br>
-                    <input type="checkbox" id="chkDrama" value="drama"> Drama
-                    <input type="checkbox" id="chkRomance" value="romance"> Romance
+                    <label>Preferências<span style="color: red; background-color: #F0F0F0">*</span></label><br>
+                    <input type="checkbox" name="pref" id="chkAcao" value="acao"> Ação
+                    <input type="checkbox" name="pref" id="chkAventura" value="aventura"> Aventura
+                    <input type="checkbox" name="pref" id="chkComedia" value="comedia"> Comédia <br>
+                    <input type="checkbox" name="pref" id="chkDrama" value="drama"> Drama
+                    <input type="checkbox" name="pref" id="chkRomance" value="romance"> Romance
                 </div>
 
                 <div class="elemento">
@@ -67,12 +102,7 @@
 
                 <div class="colocar-ao-lado">
                     <div class="esquerda">
-                        <button type="submit" id="botao-cadastrar" onclick="cadastrarFilme()">CADASTRAR</button>
-                        <script>
-                            function cadastrarFilme() {
-                                alert("Usuário cadastrado com sucesso!");
-                            }
-                        </script>
+                        <button type="button" id="botao-cadastrar" onclick="onSubmit()">CADASTRAR</button>
                     </div>
                     <div class="direita">
                         <button type="reset" id="botao-limpar">LIMPAR</button>

@@ -6,6 +6,28 @@
     <title>LOKADORA - Bem-vindo!</title>
     <link rel="stylesheet" type="text/css" href="../css/form.css" />
 </head>
+<script>
+    function onSubmit() {
+        nome = document.getElementById('nome')
+        if (nome.value == '') {
+            alert('Informe o título')
+            nome.focus()
+            return false
+        }
+
+        gens = document.getElementById('gens')
+        if (gens.value == '') {
+            alert('Informe o gênero')
+            email.focus()
+            return false
+        }
+
+
+        alert('Filme cadastrado com sucesso!')
+        window.location.href = "../index.html"
+
+    }
+</script>
 
 <body>
     <!-- MENU DE NAVEGAÇÃO -->
@@ -32,17 +54,17 @@
             <div id="topo-b">
                 <h2>Cadastar novo filme</h2>
             </div><br><br>
-            <form action="../index.html">
+            <form>
 
                 <div class="colocar-ao-lado">
                     <div class="esquerda">
-                        <label class="">* Título</label><br>
-                        <input class="input" type="text" placeholder=" Título do filme">
+                        <label class="">Título<span style="color: red; background-color: #F0F0F0">*</span></label><br>
+                        <input class="input" type="text" id="nome" placeholder=" Título do filme">
                     </div>
                     <div class="direita">
-                        <label class="">* Gênero</label><br>
-                        <select name="" class="input">
-                            <option value="0">...</option>
+                        <label class="">Gênero<span style="color: red; background-color: #F0F0F0">*</span></label><br>
+                        <select id="gens" class="input">
+                            <option value="">...</option>
                             <option value="1">Ação</option>
                             <option value="2">Aventura</option>
                             <option value="3">Comédia</option>
@@ -53,7 +75,7 @@
                 </div>
 
                 <div class="elemento">
-                    <label>* Prêmios</label><br>
+                    <label>Prêmios<span style="color: red; background-color: #F0F0F0">*</span></label><br>
                     <input type="checkbox" id="fdeouro" value="framboesa de ouro"> Framboesa de Ouro
                     <input type="checkbox" id="eddie" value="eddie"> Eddie
                     <input type="checkbox" id="oscar" value="oscar"> Óscar<br>
@@ -68,12 +90,7 @@
 
                 <div class="colocar-ao-lado">
                     <div class="esquerda">
-                        <button type="submit" id="botao-cadastrar" onclick="cadastrarFilme()">CADASTRAR</button>
-                        <script>
-                            function cadastrarFilme() {
-                                alert("Filme cadastrado com sucesso!");
-                            }
-                        </script>
+                        <button type="button" id="botao-cadastrar" onclick="onSubmit()">CADASTRAR</button>
                     </div>
                     <div class="direita">
                         <button type="reset" id="botao-limpar">LIMPAR</button>

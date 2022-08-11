@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 
+
 <body>
     <!-- MENU DE NAVEGAÇÃO -->
     <nav>
@@ -38,16 +39,25 @@
                 <div class="entradas">
                     <div class="icone"><img src="img/2.png" alt=""></div>
                     <label for="">*</label>
-                    <input class="input" type="text" placeholder="E-mail" name="email" />
+                    <input class="input" type="text" placeholder="E-mail" name="email" id="email" />
                 </div><br><br>
 
                 <div>
-                    <a href="login.html">
+                    <a>
                         <button id="botao" onclick="enviarEmail()">ENVIAR</button>
                     </a>
                     <script>
                         function enviarEmail() {
+
+                            email = document.getElementById('email')
+                            if (email.value == '') {
+                                alert('Informe o email')
+                                email.focus()
+                                return false
+                            }
+
                             alert("Senha enviada para o e-mail informado.");
+                            window.location.href = ('login.html')
                         }
                     </script>
                 </div>
