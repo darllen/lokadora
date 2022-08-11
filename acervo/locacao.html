@@ -7,6 +7,35 @@
     <link rel="stylesheet" type="text/css" href="../css/form.css" />
 </head>
 
+<script>
+    function onSubmit() {
+        cli = document.getElementById('cli')
+        if (cli.value == '') {
+            alert('Informe o cliente')
+            cli.focus()
+            return false
+        }
+
+        date_loc = document.getElementById('date_loc')
+        if (date_loc.value == '') {
+            alert('Informe a data de locação')
+            date_loc.focus()
+            return false
+        }
+
+        date_ent = document.getElementById('date_ent')
+        if (date_ent.value == '') {
+            alert('Informe a data de devolução')
+            date_ent.focus()
+            return false
+        }
+
+
+        alert('Locação confirmada!')
+        window.location.href = "acervo.html"
+    }
+</script>
+
 <body>
     <!-- MENU DE NAVEGAÇÃO -->
     <nav>
@@ -32,12 +61,13 @@
             <div id="topo-b">
                 <h2>Locação</h2>
             </div><br><br>
-            <form action="acervo/acervo.html">
+            <form>
 
                 <div class="selecao">
                     <div class="icone"><img src="../img/2.png" alt=""></div>
-                    <select>
-                        <option value="0">* Cliente</option>
+                    <span style="color: red; background-color: #F0F0F0">*</span>
+                    <select id="cli">
+                        <option value="">Cliente</option>
                         <option value="1">Jamilly</option>
                         <option value="2">Darllen</option>
                         <option value="3">Anunciada</option>
@@ -46,12 +76,12 @@
                 </div><br><br><br>
                 <div class="colocar-ao-lado">
                     <div class="esquerda">
-                        <label>* Data Locação</label><br>
-                        <input class="input" type="date">
+                        <label>Data Locação<span style="color: red; background-color: #F0F0F0">*</span></label><br>
+                        <input class="input" id="date_loc" type="date">
                     </div>
                     <div class="direita">
-                        <label>* Data Entrega</label><br>
-                        <input class="input" type="date">
+                        <label>Data Entrega<span style="color: red; background-color: #F0F0F0">*</span></label><br>
+                        <input class="input" id="date_ent" type="date">
                     </div>
                 </div>
 
@@ -62,12 +92,7 @@
 
                 <div class="colocar-ao-lado">
                     <div class="esquerda">
-                        <button type="submit" id="botao-cadastrar" onclick="confirmar()">CONFIRMAR</button>
-                        <script>
-                            function confirmar() {
-                                alert("Locação confirmada!");
-                            }
-                        </script>
+                        <button type="button" id="botao-cadastrar" onclick="onSubmit()">CONFIRMAR</button>
                     </div>
                     <div class="direita">
                         <button type="reset" id="botao-limpar">LIMPAR</button>
