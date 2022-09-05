@@ -6,7 +6,29 @@
     <title>LOKADORA - Bem-vindo!</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
+    
+<script>
+        function onSubmit() {
+            var email = document.getElementById("inputEmail")
+            if (email.value == "") {
+                alert("Informe o e-mail")
 
+                email.focus();
+                return false;
+            }
+
+            var senha = document.getElementById("inputSenha")
+            if (senha.value == "") {
+                alert("Informe a senha")
+
+                senha.focus();
+                return false;
+            }
+            
+            window.location.href = "/index.html"
+        }
+</script>
+    
 <body>
     <div class="pai">
         <div id="filho1">
@@ -55,31 +77,6 @@
             </div>
         </div>
     </footer>
-
-    <script>
-        function onSubmit() {
-
-            //Input
-            var email = document.getElementById("inputEmail")
-            if (email.value == "") {
-                alert("Informe o e-mail")
-
-                email.focus();
-                return false;
-            }
-
-            var senha = document.getElementById("inputSenha")
-            if (senha.value == "") {
-                alert("Informe a senha")
-
-                senha.focus();
-                return false;
-            }
-            
-            window.location.href = "/index.html"
-
-        }
-    </script>
 </body>
 
 </html>
